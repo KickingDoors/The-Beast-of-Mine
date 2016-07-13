@@ -9,6 +9,7 @@ public class MsgManager : MonoBehaviour {
 	public Text msgBox; // Qual objeto da interface que mostra a msg.
 	public bool isTextWritten = false; // Isto é para verificar se o texto ja está escrito ou não.
 	public string[] AllMsgs; // Para criar mais falas/mensagens, basta aumentar o numero no editor da unity e escrever as mensagens ali mesmo.
+	public string MsgToCallOnEndOfMsgs;
 
 	void Start(){
 	
@@ -16,24 +17,31 @@ public class MsgManager : MonoBehaviour {
 	}
 
 	void Update (){
-		if (Input.GetMouseButtonDown (0)) {
-			if (isTextWritten == true) { // caso o texto ja esteja escrito devemos passar para a mensagem seguinte.
-				if (curMsg < AllMsgs.Length) {
-					if (SceneManager.GetActiveScene ().name == "Chapter1") {
+		if (curMsg < AllMsgs.Length - 1) {
+			if (Input.GetMouseButtonDown (0)) {
+				if (isTextWritten == true) { // caso o texto ja esteja escrito devemos passar para a mensagem seguinte.
+					if (curMsg <= AllMsgs.Length) {
+					
+						curMsg++;
+						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
+					} else {
+						
 						curMsg++;
 						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
 					}
 				} else {
-
-					print ("Load next level");
+					// caso o texto nao esteja escrito ainda, desejamos para o método de escrita da mensagem e começar um que termina instantaneamente.
+					StopCoroutine ("WriteMsg");
+					WriteMsgInstantaneous (AllMsgs [curMsg]);
+					//curMsg++;
 				}
-			}else {
-				// caso o texto nao esteja escrito ainda, desejamos para o método de escrita da mensagem e começar um que termina instantaneamente.
-				StopCoroutine ("WriteMsg");
-				WriteMsgInstantaneous(AllMsgs [curMsg]);
-				//curMsg++;
+			} 
+		} else {
+			if (MsgToCallOnEndOfMsgs != "") {
+				BroadcastMessage (MsgToCallOnEndOfMsgs);
+				this.enabled = false;
 			}
-		} 
+		}
 	}
 
 	public void WriteMsgInstantaneous(string Msg){ // Este escreve instantaneamente.
