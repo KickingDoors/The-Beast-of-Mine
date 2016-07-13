@@ -4,10 +4,10 @@ using System.Collections;
 
 public class TestEvent : MonoBehaviour {
 
-
+	public GameObject GraphicImg;
 
 	public void EnableImage(){
 
-		GetComponent<Image> ().color = Color.white;
+		GraphicImg.SetActive (true);
 	}
 }

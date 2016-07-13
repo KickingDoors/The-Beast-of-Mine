@@ -10,10 +10,13 @@ public class MsgManager : MonoBehaviour {
 	public bool isTextWritten = false; // Isto é para verificar se o texto ja está escrito ou não.
 	public string[] AllMsgs; // Para criar mais falas/mensagens, basta aumentar o numero no editor da unity e escrever as mensagens ali mesmo.
 	public string MsgToCallOnEndOfMsgs;
+	public Sprite[] ImagensDeFundo; // As imagens que serão mostrados no fundo em ordem de mensagem, para repetir a imagem é só usar ela duas vezes seguidas e então não haverá uma transição
+	public Image ImagemBG;
 
 	void Start(){
 	
 		StartCoroutine ("WriteMsg", AllMsgs [curMsg]); // Este código escreve a mensagem inicial.
+		UpdateImage (ImagensDeFundo[curMsg]);
 	}
 
 	void Update (){
@@ -21,12 +24,10 @@ public class MsgManager : MonoBehaviour {
 			if (Input.GetMouseButtonDown (0)) {
 				if (isTextWritten == true) { // caso o texto ja esteja escrito devemos passar para a mensagem seguinte.
 					if (curMsg <= AllMsgs.Length) {
-					
+
 						curMsg++;
-						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
-					} else {
-						
-						curMsg++;
+						StopCoroutine ("TransitionFade");
+						UpdateImage (ImagensDeFundo[curMsg]);
 						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
 					}
 				} else {
@@ -41,6 +42,57 @@ public class MsgManager : MonoBehaviour {
 				BroadcastMessage (MsgToCallOnEndOfMsgs);
 				this.enabled = false;
 			}
+		}
+	}
+
+	public IEnumerator TransitionFade(Sprite TargetImg){
+
+		float duration = 1.0f;
+
+		for (float t = 0.0f; t < duration; t += Time.deltaTime) {
+			ImagemBG.color = Color.Lerp( ImagemBG.color , Color.black , t/duration );
+			yield return null;
+		}
+
+		ImagemBG.sprite = TargetImg;
+
+		for (float t = 0.0f; t < duration; t += Time.deltaTime) {
+			ImagemBG.color = Color.Lerp( ImagemBG.color , Color.white , t/duration );
+			yield return null;
+		}
+
+	}
+
+	public IEnumerator FadeOut(){
+
+		float duration = 1.0f;
+		//FadeOut
+		for (float t = 0.0f; t > duration; t += Time.deltaTime) {
+			ImagemBG.color = Color.Lerp( ImagemBG.color , Color.black , t/duration );
+			yield return null;
+		}
+
+	}
+
+	public void UpdateImage(Sprite TargetImg){
+
+		if (TargetImg != null) {
+			if (ImagemBG.sprite != null) {
+
+				if (ImagemBG.sprite != TargetImg) {
+
+					StartCoroutine ("TransitionFade" , TargetImg);
+
+				}
+			
+			} else {
+
+				StartCoroutine ("TransitionFade" , TargetImg);
+			}
+		} else {
+
+			StopCoroutine ("TransitionFade");
+			StartCoroutine ("FadeOut");
 		}
 	}
 
