@@ -27,11 +27,12 @@ public class MsgManager : MonoBehaviour {
 
 						curMsg++;
 						StopCoroutine ("TransitionFade");
+						StopCoroutine ("WriteMsg");
 						UpdateImage (ImagensDeFundo[curMsg]);
 						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
 					}
 				} else {
-					// caso o texto nao esteja escrito ainda, desejamos para o método de escrita da mensagem e começar um que termina instantaneamente.
+					// caso o texto nao esteja escrito ainda, desejamos parar o método de escrita da mensagem e começar um que termina instantaneamente.
 					StopCoroutine ("WriteMsg");
 					WriteMsgInstantaneous (AllMsgs [curMsg]);
 					//curMsg++;
@@ -40,7 +41,6 @@ public class MsgManager : MonoBehaviour {
 		} else {
 			if (MsgToCallOnEndOfMsgs != "") {
 				BroadcastMessage (MsgToCallOnEndOfMsgs);
-				this.enabled = false;
 			}
 		}
 	}
@@ -107,6 +107,8 @@ public class MsgManager : MonoBehaviour {
 		}
 		isTextWritten = true;
 
+		if (curMsg >= AllMsgs.Length - 1)
+			this.enabled = false;
 	}
 
 	public IEnumerator WriteMsg(string Msg){ // Este escreve aos poucos, letra por letra. 1 letra a cada 2 frames.
@@ -123,5 +125,7 @@ public class MsgManager : MonoBehaviour {
 		}
 		isTextWritten = true;
 
+		if (curMsg >= AllMsgs.Length - 1)
+			this.enabled = false;
 	}
 }
