@@ -4,18 +4,18 @@ using System.Collections;
 
 public class Choices : MonoBehaviour {
 
+    [Header("References")]
 	public GameObject ChoicesObj;
-
 	public Button[] ChoiceBtns;
-
-	public int AmmountOfOptions = 4;
-
-	public MsgManager[] ChoiceConsequences;
-
-	public string[] ChoicesNames;
 	public Text[] ChoicesText;
 
-	public int[] VarsToActivate;
+    [Header("Things To Setup")]
+    public int AmmountOfOptions = 4;
+    public MsgManager[] ChoiceConsequences;
+    public string[] ChoicesNames;
+    public string[] VarsToActivate;
+    public bool HasTimer;
+    public float AmmountOfTime = 3;
 
 	void Start () {
 
@@ -33,8 +33,8 @@ public class Choices : MonoBehaviour {
 		if (AmmountOfOptions > 0) {
 			ChoiceBtns [0].onClick.AddListener (() => ChooseBtn (0));
 			ChoicesText [0].text = ChoicesNames [0];
-			ChoiceBtns [0].GetComponent<ChoiceBtnDetails> ().VarToActivate = VarsToActivate[0];
-		}
+            ChoiceBtns [0].GetComponent<ChoiceBtnDetails> ().VarToActivate = VarsToActivate[0];
+        }
 
 		if(AmmountOfOptions > 1 ){
 			ChoiceBtns [1].onClick.AddListener (() => ChooseBtn (1));

@@ -1,24 +1,39 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.IO;
+using LitJson;
 
-public class LoadChoices : MonoBehaviour {
+public class LoadChoices : MonoBehaviour
+{
 
-	public Choices TargetChoicesNoAction, TargetChoicesWithAction;
-	public int ActionID;
+    public Choices TargetChoicesNoAction, TargetChoicesWithAction;
+    public string ActionName;
+    private string jsonString;
+    private JsonData ActionData;
 
-	public void OpenChoices(){
+    public void OpenChoices()
+    {
+        if (ActionName != "")
+        {
 
-		if (ActionID != 0) {
-			if (GameObject.Find ("GameManager").GetComponent<ActionTracker> ().Variables [ActionID] == false) {
+            jsonString = File.ReadAllText(Application.dataPath + "/Resources/ActionTracker.json");
+            ActionData = JsonMapper.ToObject(jsonString);
 
-				TargetChoicesNoAction.enabled = true;
+        
+            if (ActionData[ActionName].ToString() == "true")
+            {
 
-			} else {
+                TargetChoicesNoAction.enabled = true;
 
-				TargetChoicesWithAction.enabled = true;
-			}
-		} else {
-			TargetChoicesNoAction.enabled = true;
-		}
-	}
+            }
+            else {
+
+                TargetChoicesWithAction.enabled = true;
+            }
+        }
+        else
+        {
+            TargetChoicesNoAction.enabled = true;
+        }
+    }
 }
