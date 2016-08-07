@@ -107,8 +107,11 @@ public class MsgManager : MonoBehaviour {
 		}
 		isTextWritten = true;
 
-		if (curMsg >= AllMsgs.Length - 1)
-			this.enabled = false;
+        if (curMsg >= AllMsgs.Length - 1)
+        {
+            this.enabled = false;
+            curMsg = 0;
+        }
 	}
 
 	public IEnumerator WriteMsg(string Msg){ // Este escreve aos poucos, letra por letra. 1 letra a cada 2 frames.
@@ -125,7 +128,10 @@ public class MsgManager : MonoBehaviour {
 		}
 		isTextWritten = true;
 
-		if (curMsg >= AllMsgs.Length - 1)
-			this.enabled = false;
-	}
+        if (curMsg >= AllMsgs.Length - 1)
+        {
+            this.enabled = false;
+            curMsg = 0;
+        }
+    }
 }

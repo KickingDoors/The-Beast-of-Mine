@@ -8,6 +8,14 @@ public class ChoiceBtnDetails : MonoBehaviour {
     private string jsonString;
 	public string VarToActivate;
     private JsonData ActionData;
+    public bool ShouldStopTimer = false;
+    private TimerManager Tm;
+
+    void Awake()
+    {
+
+        Tm = GameObject.Find("GameManager").GetComponent<TimerManager>();
+    }
 
 	public void UpdateActionTracker (){
 
@@ -18,5 +26,8 @@ public class ChoiceBtnDetails : MonoBehaviour {
 
             ActionData[VarToActivate] = true;
         }
+
+        if(ShouldStopTimer == true)
+            Tm.StopTimer();
     }
 }
