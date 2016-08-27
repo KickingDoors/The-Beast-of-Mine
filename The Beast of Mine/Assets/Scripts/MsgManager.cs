@@ -14,7 +14,7 @@ public class MsgManager : MonoBehaviour {
 	public Image ImagemBG;
 
 	void Start(){
-	
+
 		StartCoroutine ("WriteMsg", AllMsgs [curMsg]); // Este código escreve a mensagem inicial.
 		UpdateImage (ImagensDeFundo[curMsg]);
 	}
@@ -30,13 +30,14 @@ public class MsgManager : MonoBehaviour {
 						StopCoroutine ("WriteMsg");
 						UpdateImage (ImagensDeFundo[curMsg]);
 						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
-					}
+                    }
 				} else {
 					// caso o texto nao esteja escrito ainda, desejamos parar o método de escrita da mensagem e começar um que termina instantaneamente.
 					StopCoroutine ("WriteMsg");
 					WriteMsgInstantaneous (AllMsgs [curMsg]);
-					//curMsg++;
-				}
+
+                    //curMsg++;
+                }
 			} 
 		} else {
 			if (MsgToCallOnEndOfMsgs != "") {

@@ -1,13 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.IO;
-using LitJson;
 
 public class ChoiceBtnDetails : MonoBehaviour {
 
-    private string jsonString;
 	public string VarToActivate;
-    private JsonData ActionData;
     public bool ShouldStopTimer = false;
     private TimerManager Tm;
 
@@ -19,13 +15,8 @@ public class ChoiceBtnDetails : MonoBehaviour {
 
 	public void UpdateActionTracker (){
 
-        if (VarToActivate != "")
-        {
-            jsonString = File.ReadAllText(Application.dataPath + "/Resources/ActionTracker.json");
-            ActionData = JsonMapper.ToObject(jsonString);
-
-            ActionData[VarToActivate] = true;
-        }
+        PlayerPrefs.SetInt(VarToActivate, 1);
+        PlayerPrefs.Save();
 
         if(ShouldStopTimer == true)
             Tm.StopTimer();
