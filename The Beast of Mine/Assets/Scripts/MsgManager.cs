@@ -16,37 +16,49 @@ public class MsgManager : MonoBehaviour {
 	void Start(){
 
 		StartCoroutine ("WriteMsg", AllMsgs [curMsg]); // Este código escreve a mensagem inicial.
-		UpdateImage (ImagensDeFundo[curMsg]);
+        msgBox.transform.parent.GetComponent<Button>().onClick.RemoveAllListeners();
+        msgBox.transform.parent.GetComponent<Button>().onClick.AddListener(() => PassMsg());
+
+        UpdateImage (ImagensDeFundo[curMsg]);
 	}
 
-	void Update (){
-		if (curMsg < AllMsgs.Length - 1) {
-			if (Input.GetMouseButtonDown (0)) {
-				if (isTextWritten == true) { // caso o texto ja esteja escrito devemos passar para a mensagem seguinte.
-					if (curMsg <= AllMsgs.Length) {
-
-						curMsg++;
-						StopCoroutine ("TransitionFade");
-						StopCoroutine ("WriteMsg");
-						UpdateImage (ImagensDeFundo[curMsg]);
-						StartCoroutine ("WriteMsg", AllMsgs [curMsg]);
-                    }
-				} else {
-					// caso o texto nao esteja escrito ainda, desejamos parar o método de escrita da mensagem e começar um que termina instantaneamente.
-					StopCoroutine ("WriteMsg");
-					WriteMsgInstantaneous (AllMsgs [curMsg]);
-
-                    //curMsg++;
+	void PassMsg (){
+        if (curMsg < AllMsgs.Length - 1)
+        {
+            if (isTextWritten == true)
+            { // caso o texto ja esteja escrito devemos passar para a mensagem seguinte.
+                if (curMsg <= AllMsgs.Length)
+                {
+                    curMsg++;
+                    StopCoroutine("TransitionFade");
+                    StopCoroutine("WriteMsg");
+                    UpdateImage(ImagensDeFundo[curMsg]);
+                    StartCoroutine("WriteMsg", AllMsgs[curMsg]);
                 }
-			} 
-		} else {
-			if (MsgToCallOnEndOfMsgs != "") {
-				BroadcastMessage (MsgToCallOnEndOfMsgs);
-			}
-		}
+            }
+            else {
+                // caso o texto nao esteja escrito ainda, desejamos parar o método de escrita da mensagem e começar um que termina instantaneamente.
+                StopCoroutine("WriteMsg");
+                WriteMsgInstantaneous(AllMsgs[curMsg]);
+
+                //curMsg++;
+            }
+        }
 	}
 
-	public IEnumerator TransitionFade(Sprite TargetImg){
+    void Update()
+    {
+        if (curMsg >= AllMsgs.Length - 1)
+        { 
+            if (MsgToCallOnEndOfMsgs != "")
+            {
+                BroadcastMessage(MsgToCallOnEndOfMsgs);
+            }
+        }
+    }
+
+
+    public IEnumerator TransitionFade(Sprite TargetImg){
 
 		float duration = 1.0f;
 
@@ -111,6 +123,7 @@ public class MsgManager : MonoBehaviour {
         if (curMsg >= AllMsgs.Length - 1)
         {
             this.enabled = false;
+            msgBox.transform.parent.GetComponent<Button>().onClick.RemoveAllListeners();
             curMsg = 0;
         }
 	}
@@ -132,6 +145,7 @@ public class MsgManager : MonoBehaviour {
         if (curMsg >= AllMsgs.Length - 1)
         {
             this.enabled = false;
+            msgBox.transform.parent.GetComponent<Button>().onClick.RemoveAllListeners();
             curMsg = 0;
         }
     }
