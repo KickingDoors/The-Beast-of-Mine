@@ -5,9 +5,9 @@ public class TimerManager : MonoBehaviour {
 
     private IEnumerator Co;
 
-    public void StartTimer(int Time, MsgManager TargetMsg, int MsgNumber)
+    public void StartTimer(int Time)
     {
-        Co = Timer(Time, TargetMsg, MsgNumber);
+        Co = Timer(Time);
         StartCoroutine(Co);
     }
 
@@ -17,7 +17,7 @@ public class TimerManager : MonoBehaviour {
         print("Stopped Timer");
     }
 
-    IEnumerator Timer ( int Time , MsgManager TargetMsg , int MsgNumber)
+    IEnumerator Timer ( int Time )
     {
         for( int i = Time; i >= 0; i--)
         {
@@ -25,6 +25,6 @@ public class TimerManager : MonoBehaviour {
             print("Timer : " + i);
         }
 
-        GameObject.Find("GameManager").GetComponent<GameManager>().Die(TargetMsg, MsgNumber);
+        GameObject.Find("GameManager").GetComponent<GameManager>().Die();
     }
 }

@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour {
     public bool Paused = false;
     public Canvas PauseMenu;
 
-	public void Die( MsgManager TargetMsg , int MsgNumber)
+	public void Die()
     {
         SceneManager.LoadScene("LoadingScreen");
         //LoadLast Checkpoint
