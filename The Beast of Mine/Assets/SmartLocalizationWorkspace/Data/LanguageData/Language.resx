@@ -117,6 +117,122 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="1" xml:space="preserve">
-		<value>Mensagem 1</value>
+		<value>QTE - 1</value>
+	</data>
+	<data name="10" xml:space="preserve">
+		<value>Pular</value>
+	</data>
+	<data name="11" xml:space="preserve">
+		<value>Você tropeçou no buraco, seu calcanhar lateja, talvez  o torceu? Mas a dor não importa...você precisa continuar correndo</value>
+	</data>
+	<data name="12" xml:space="preserve">
+		<value>Você não precisa enxergar para saber onde está indo. Conhece aquele lugar, seu lar.  Tudo o que você é e aprendeu, veio desse lugar…</value>
+	</data>
+	<data name="13" xml:space="preserve">
+		<value>Há um tronco caído no meio do caminho</value>
+	</data>
+	<data name="14" xml:space="preserve">
+		<value>Passar por cima</value>
+	</data>
+	<data name="15" xml:space="preserve">
+		<value>Dar a volta </value>
+	</data>
+	<data name="16" xml:space="preserve">
+		<value>O tronco está escorregadio devido a chuva, você acabou caindo na poça de lama e ralou os joelhos na queda </value>
+	</data>
+	<data name="17" xml:space="preserve">
+		<value>Apesar de mais seguro, você tomou muito tempo dando a volta e o tempo aqui é precioso demais para ser desperdiçado</value>
+	</data>
+	<data name="18" xml:space="preserve">
+		<value>Corra</value>
+	</data>
+	<data name="19" xml:space="preserve">
+		<value>O galho de uma árvore aparece no seu campo de visão</value>
+	</data>
+	<data name="2" xml:space="preserve">
+		<value>Você corre no caminho lamacento sem enxergar um palmo a sua distância. </value>
+	</data>
+	<data name="20" xml:space="preserve">
+		<value>Desviar </value>
+	</data>
+	<data name="21" xml:space="preserve">
+		<value>Seu rosto colidiu contra o galho adicionando mais alguns cortes a sua face já danificada</value>
+	</data>
+	<data name="22" xml:space="preserve">
+		<value>Suas pernas movem velozmente enquanto seu corpo se choca contra as gotas. A água lava o seu sangue, umedece as suas feridas.</value>
+	</data>
+	<data name="23" xml:space="preserve">
+		<value>Há uma ponte logo a frente, mas ela parece não estar em boas condições</value>
+	</data>
+	<data name="24" xml:space="preserve">
+		<value>Passar pela ponte</value>
+	</data>
+	<data name="25" xml:space="preserve">
+		<value>Descer a depressão rochosa</value>
+	</data>
+	<data name="26" xml:space="preserve">
+		<value>Os rangidos da madeira apertam o seu coração, mas nada acontece. Sorte ou não, parece que ela ainda não estava com a condição tão prejudicada como você pensava</value>
+	</data>
+	<data name="27" xml:space="preserve">
+		<value>As pedras não são as mais confiáveis também, principalmente em dia de chuva. Seu pé de apoio escorrega e você acaba se chocando com o chão.</value>
+	</data>
+	<data name="28" xml:space="preserve">
+		<value>Você está perdendo muito sangue…</value>
+	</data>
+	<data name="29" xml:space="preserve">
+		<value>Você precisa chegar na sua casa...e depressa…</value>
+	</data>
+	<data name="3" xml:space="preserve">
+		<value>Você avista uma bifurcação na mata, do lado direito parece ter mais presença da luz do que o da esquerda</value>
+	</data>
+	<data name="30" xml:space="preserve">
+		<value>Há um atalho logo a frente, mas apesar de ser mais rápido ele pode ser mais perigoso</value>
+	</data>
+	<data name="31" xml:space="preserve">
+		<value>Atalho</value>
+	</data>
+	<data name="32" xml:space="preserve">
+		<value>Caminho lento e seguro </value>
+	</data>
+	<data name="33" xml:space="preserve">
+		<value>Seu corpo já conhece todos os perigos, galhos, espinhos e buracos das milhares de vezes que você pegou esse já atalho, você chegará bem mais rápido ao seu destino</value>
+	</data>
+	<data name="34" xml:space="preserve">
+		<value> Você quase nunca veio por esse caminho e não imaginava que iria durar tanto tempo assim, você está perdendo sangue a cada minuto e o tempo-lhe é precioso. Talvez se você tivesse se arriscado no atalho teria sido melhor</value>
+	</data>
+	<data name="35" xml:space="preserve">
+		<value>Você chega na varanda de madeira da cabana mal iluminada. Pequenos feixes de luz saem das lamparinas penduradas no varão da madeira do teto.</value>
+	</data>
+	<data name="36" xml:space="preserve">
+		<value>Ofegante, seu ombro empurra a porta pesada e adentra o local. Suas pernas cambaleiam sobre chão que range a cada passo.</value>
+	</data>
+	<data name="37" xml:space="preserve">
+		<value>Suas botas encharcadas e imundas, sujam o grande tapete da sala e pequenas gotas de água escorrem do seu casaco de couro e atingem o solo. 
+</value>
+	</data>
+	<data name="38" xml:space="preserve">
+		<value>Um homem de cabelo grisalho com uma cicatriz no rosto aparece no cômodos com uma pequena vela acesa em mãos. Seu físico aparenta certa idade, mas suas cicatrizes e seus olhos guardam incontáveis histórias.</value>
+	</data>
+	<data name="39" xml:space="preserve">
+		<value>
+Mesmo preocupado ele dá atenção aos ferimentos, estancando-os com bandanas e plantas medicinais antes de dizer uma palavra se quer.</value>
+	</data>
+	<data name="4" xml:space="preserve">
+		<value>Ir para a direita</value>
+	</data>
+	<data name="5" xml:space="preserve">
+		<value>Ir para esquerda </value>
+	</data>
+	<data name="6" xml:space="preserve">
+		<value>As poças d'água refletem a luz prejudicando a sua visão já quase ineficiente devido a chuva e seus ferimentos no rostoDificultando você desviar dos galhos e espinhos pelo caminho que cortam a sua pele com o atrito</value>
+	</data>
+	<data name="7" xml:space="preserve">
+		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz</value>
+	</data>
+	<data name="8" xml:space="preserve">
+		<value>A chuva caí intensamente sobe as folhas largas da árvores, mas não impede encharcar as suas roupas.</value>
+	</data>
+	<data name="9" xml:space="preserve">
+		<value>Um buraco!</value>
 	</data>
 </root>
