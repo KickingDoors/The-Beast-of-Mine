@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using SmartLocalization;
 using System.Collections;
 
 public class MsgManager : MonoBehaviour {
@@ -113,7 +114,7 @@ public class MsgManager : MonoBehaviour {
 
 		msgBox.text = "";
 
-		char[] TempMsg = Msg.ToCharArray ();
+		char[] TempMsg = LanguageManager.Instance.GetTextValue(Msg).ToCharArray ();
 
 		for (int i = 0; i < TempMsg.Length; i++ ) {
 			msgBox.text += TempMsg [i];
@@ -133,9 +134,9 @@ public class MsgManager : MonoBehaviour {
 		isTextWritten = false;
 		msgBox.text = "";
 
-		char[] TempMsg = Msg.ToCharArray ();
+		char[] TempMsg = LanguageManager.Instance.GetTextValue(Msg).ToCharArray();
 
-		for (int i = 0; i < TempMsg.Length; i++ ) {
+        for (int i = 0; i < TempMsg.Length; i++ ) {
 			msgBox.text += TempMsg [i];
 			yield return null;
 			yield return null;

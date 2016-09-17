@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using SmartLocalization;
 using System.Collections;
 
 public class Choices : MonoBehaviour {
@@ -31,28 +32,28 @@ public class Choices : MonoBehaviour {
 		}
 		if (AmmountOfOptions > 0) {
 			ChoiceBtns [0].onClick.AddListener (() => ChooseBtn (0));
-			ChoicesText [0].text = ChoicesNames [0];
+			ChoicesText [0].text = LanguageManager.Instance.GetTextValue(ChoicesNames [0]);
             ChoiceBtns [0].GetComponent<ChoiceBtnDetails> ().VarToActivate = VarsToActivate[0];
             ChoiceBtns[0].GetComponent<ChoiceBtnDetails>().ShouldStopTimer = StopsTimer[0];
         }
 
 		if(AmmountOfOptions > 1 ){
 			ChoiceBtns [1].onClick.AddListener (() => ChooseBtn (1));
-			ChoicesText [1].text = ChoicesNames [1];
+			ChoicesText [1].text = LanguageManager.Instance.GetTextValue(ChoicesNames[1]);
 			ChoiceBtns [1].GetComponent<ChoiceBtnDetails> ().VarToActivate = VarsToActivate[1];
             ChoiceBtns[1].GetComponent<ChoiceBtnDetails>().ShouldStopTimer = StopsTimer[1];
         }
 
 		if(AmmountOfOptions > 2 ){
 			ChoiceBtns [2].onClick.AddListener (() => ChooseBtn (2));
-			ChoicesText [2].text = ChoicesNames [2];
+			ChoicesText [2].text = LanguageManager.Instance.GetTextValue(ChoicesNames[2]);
 			ChoiceBtns [2].GetComponent<ChoiceBtnDetails> ().VarToActivate = VarsToActivate[2];
             ChoiceBtns[2].GetComponent<ChoiceBtnDetails>().ShouldStopTimer = StopsTimer[2];
         }
 
 		if(AmmountOfOptions > 3 ){
 			ChoiceBtns [3].onClick.AddListener (() => ChooseBtn (3));
-			ChoicesText [3].text = ChoicesNames [3];
+			ChoicesText [3].text = LanguageManager.Instance.GetTextValue(ChoicesNames[3]);
 			ChoiceBtns [3].GetComponent<ChoiceBtnDetails> ().VarToActivate = VarsToActivate[3];
             ChoiceBtns[3].GetComponent<ChoiceBtnDetails>().ShouldStopTimer = StopsTimer[3];
         }
