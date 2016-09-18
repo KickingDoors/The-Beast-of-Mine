@@ -122,6 +122,15 @@
 	<data name="10" xml:space="preserve">
 		<value>Pular</value>
 	</data>
+	<data name="100" xml:space="preserve">
+		<value>A: Que jornada velho?</value>
+	</data>
+	<data name="101" xml:space="preserve">
+		<value>A: Do que o senhor está falando, que jornada?</value>
+	</data>
+	<data name="102" xml:space="preserve">
+		<value>M: A jornada que você começará para resgatar o seu amuleto, antes que seja tarde mais.</value>
+	</data>
 	<data name="11" xml:space="preserve">
 		<value>Você tropeçou no buraco, seu calcanhar lateja, talvez  o torceu? Mas a dor não importa...você precisa continuar correndo</value>
 	</data>
@@ -218,19 +227,199 @@
 	<data name="4" xml:space="preserve">
 		<value>Ir para a direita</value>
 	</data>
+	<data name="40" xml:space="preserve">
+		<value>Mestre : Mas que diabos aconteceu com você? </value>
+	</data>
+	<data name="41" xml:space="preserve">
+		<value>Ser irônico </value>
+	</data>
+	<data name="42" xml:space="preserve">
+		<value>Tentar acalmá-lo </value>
+	</data>
+	<data name="43" xml:space="preserve">
+		<value>Aprendiz: Está para mais corvo assassino que diabos, mestre</value>
+	</data>
+	<data name="44" xml:space="preserve">
+		<value>Aprendiz: Ei calma mestre, estou bem, não estou?</value>
+	</data>
+	<data name="45" xml:space="preserve">
+		<value>M: Não é hora para brincadeiras, o que aconteceu contigo?... e como assim corvo assassino?</value>
+	</data>
+	<data name="46" xml:space="preserve">
+		<value>M: Estou vendo, você está com lama, sangue e cortes por todo o corpo. Você está super bem! </value>
+	</data>
+	<data name="47" xml:space="preserve">
+		<value>Aprendiz: É…</value>
+	</data>
+	<data name="48" xml:space="preserve">
+		<value>M: Eu te encontrei quase morto lá fora.</value>
+	</data>
+	<data name="49 " xml:space="preserve">
+		<value>M: Você entrou aqui quase morto.</value>
+	</data>
 	<data name="5" xml:space="preserve">
 		<value>Ir para esquerda </value>
+	</data>
+	<data name="50" xml:space="preserve">
+		<value>FRASE PLACEHOLDER</value>
+	</data>
+	<data name="51" xml:space="preserve">
+		<value>M: Vamos diga. Quem fez isso com você? </value>
+	</data>
+	<data name="52" xml:space="preserve">
+		<value>Se irritar</value>
+	</data>
+	<data name="53" xml:space="preserve">
+		<value>Responder </value>
+	</data>
+	<data name="54" xml:space="preserve">
+		<value>A: Você faz muitas perguntas não acha? Me deixa em paz, nem o meu pai você é!</value>
+	</data>
+	<data name="55" xml:space="preserve">
+		<value>A: Eu não sei direito mestre, eu só me lembro de alguns flashes e relances. Tudo foi tão rápido.</value>
+	</data>
+	<data name="56" xml:space="preserve">
+		<value>M: Você não tem direito de falar assim comigo, eu te criei. Você pode não me considerar como seu pai, mas eu tenho direito de saber!</value>
+	</data>
+	<data name="57" xml:space="preserve">
+		<value>M: Tudo bem jovem, com o tempo você vai se lembrar, fale apenas do que você se recorda.</value>
+	</data>
+	<data name="58" xml:space="preserve">
+		<value>A: OK… Eu me lembro que eu estava fazendo a ronda na área como o senhor me pediu, quando eu ouvi um choro. E a partir daí começa a ficar tudo confuso.</value>
+	</data>
+	<data name="59" xml:space="preserve">
+		<value>M: Continue… Me diga do que você se lembra.</value>
 	</data>
 	<data name="6" xml:space="preserve">
 		<value>As poças d'água refletem a luz prejudicando a sua visão já quase ineficiente devido a chuva e seus ferimentos no rostoDificultando você desviar dos galhos e espinhos pelo caminho que cortam a sua pele com o atrito</value>
 	</data>
+	<data name="60" xml:space="preserve">
+		<value>Queixar-se</value>
+	</data>
+	<data name="61" xml:space="preserve">
+		<value>Prosseguir</value>
+	</data>
+	<data name="62" xml:space="preserve">
+		<value>A: Parece que eu não tenho escolha neh?</value>
+	</data>
+	<data name="63" xml:space="preserve">
+		<value>A: Humm… beleza</value>
+	</data>
+	<data name="64" xml:space="preserve">
+		<value>A: Eu lembro de um corvo, mas não era um corvo qualquer…</value>
+	</data>
+	<data name="65" xml:space="preserve">
+		<value>M: Como assim um corvo? Ele era maior que os corvos normais, e tinha um cheiro de podridão?</value>
+	</data>
+	<data name="66" xml:space="preserve">
+		<value>Ser sarcástico </value>
+	</data>
+	<data name="67" xml:space="preserve">
+		<value>Concordar</value>
+	</data>
+	<data name="68" xml:space="preserve">
+		<value>A: Isso mesmo! e ele também tinha um cifre e defecava arco-íris</value>
+	</data>
+	<data name="69" xml:space="preserve">
+		<value>A: Sim! E seus olhos, eram os olhos mais assustadores que eu já vi. Como se em cada entranha do animal morasse a morte</value>
+	</data>
 	<data name="7" xml:space="preserve">
 		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz</value>
+	</data>
+	<data name="70" xml:space="preserve">
+		<value>M: Eu estou cansado das suas gracinhas, continue assim e você não vai gostar da consequência. </value>
+	</data>
+	<data name="71" xml:space="preserve">
+		<value>M: Você não viu nada jovem.</value>
+	</data>
+	<data name="72" xml:space="preserve">
+		<value>M: Vamos, conte-me mais.</value>
+	</data>
+	<data name="73" xml:space="preserve">
+		<value>A: O bicho atacou o meu rosto com suas garras. Eu lutei com ele, eu acho.  E então agarrou o meu amuleto e saiu voando com ele entre as garras. O corvo soltou um bramido que mais pareceu uma risada humana do que um um som animal.</value>
+	</data>
+	<data name="74" xml:space="preserve">
+		<value>M: O amuleto que eu fiz para você quando eu te encontrei bebê?</value>
+	</data>
+	<data name="75" xml:space="preserve">
+		<value>A: Esse mesmo… Eu sempre o usei como o senhor pediu mas eu não vejo motivo para essa cara de preocupação mestre, era só um amuleto. Aliás o senhor nunca me contou direito como me encontrou e que aconteceu com a minha mãe ou meu pai….</value>
+	</data>
+	<data name="76" xml:space="preserve">
+		<value>M: Eu já lhe disse, eu não sei sobre o seu pai e a sua mãe morreu….</value>
+	</data>
+	<data name="77" xml:space="preserve">
+		<value>Como </value>
+	</data>
+	<data name="78" xml:space="preserve">
+		<value>Quem</value>
+	</data>
+	<data name="79" xml:space="preserve">
+		<value>A: Mas como ela morreu? Foi uma doença? Ou alguém a matou?</value>
 	</data>
 	<data name="8" xml:space="preserve">
 		<value>A chuva caí intensamente sobe as folhas largas da árvores, mas não impede encharcar as suas roupas.</value>
 	</data>
+	<data name="80" xml:space="preserve">
+		<value>A: Você conseguiu ver quem a matou? Ou ela já estava morta quando o senhor chegou?</value>
+	</data>
+	<data name="81" xml:space="preserve">
+		<value>M: Essa história fica para outro dia. Temos assuntos mais importantes agora. Eu preciso que você veja uma coisa.</value>
+	</data>
+	<data name="82" xml:space="preserve">
+		<value>O Mestre se aproxima em mãos um grande livro de capa de couro</value>
+	</data>
+	<data name="83" xml:space="preserve">
+		<value>Isto é um bestiário jovem...</value>
+	</data>
+	<data name="84" xml:space="preserve">
+		<value>O que isso tem haver?</value>
+	</data>
+	<data name="85" xml:space="preserve">
+		<value>Não dizer nada</value>
+	</data>
+	<data name="86" xml:space="preserve">
+		<value>A: O que esse livro velho tem haver, não vai dizer que já chegou a hora da soneca e você vai me ler uma historinha de ninar?</value>
+	</data>
+	<data name="87" xml:space="preserve">
+		<value>Segundo o bestiário, o corvo é a feiticeira Agnes Morrigan, foi ela quem roubou o seu amuleto. Ela tem a habilidade de se transformar no agradável corvo que te atacou mais cedo</value>
+	</data>
+	<data name="88" xml:space="preserve">
+		<value>Ridicularizar</value>
+	</data>
+	<data name="89" xml:space="preserve">
+		<value>Indagar</value>
+	</data>
 	<data name="9" xml:space="preserve">
 		<value>Um buraco!</value>
+	</data>
+	<data name="90" xml:space="preserve">
+		<value>A: Parece que o nível dessa feiticeira aí decaiu bastante pra chegar ao ponto de roubar amuleto dos outros</value>
+	</data>
+	<data name="91" xml:space="preserve">
+		<value>A: Mas não faz sentido, o que ela queria com o meu amuleto, é só um pedaço de madeira</value>
+	</data>
+	<data name="92" xml:space="preserve">
+		<value>M: Ela não é uma feiticeira qualquer, e seu ataque não foi algo aleatório jovem. Ela veio em busca do seu amuleto e ela tem os seus motivos.</value>
+	</data>
+	<data name="93" xml:space="preserve">
+		<value>Em busca de um pedaço de madeira?</value>
+	</data>
+	<data name="94" xml:space="preserve">
+		<value>Mas o que ela quer com o amuleto? </value>
+	</data>
+	<data name="95" xml:space="preserve">
+		<value>A: Só se for pra alimentar a lareira da casa dela, com aquele pedaço de madeira inútil</value>
+	</data>
+	<data name="96" xml:space="preserve">
+		<value>A: Mas o que ela quer? Não é mais fácil ela comprar um loja, tenho certeza que existem muitos amuletos mais bonitos que o meu</value>
+	</data>
+	<data name="97" xml:space="preserve">
+		<value>M: Não era um amuleto qualquer. E você vai descobrir isso no decorrer da sua jornada.</value>
+	</data>
+	<data name="98" xml:space="preserve">
+		<value>Como assim?</value>
+	</data>
+	<data name="99" xml:space="preserve">
+		<value>Jornada?</value>
 	</data>
 </root>
