@@ -9,6 +9,7 @@ public class Botoes : StateMachineBehaviour {
 	public string MensagemID;
 	public string[] RespostaID;
 	public bool DeveFecharBotoes = true;
+    public bool isCorrectAnswer;
 
 	[Header("Visual")]
 	public Sprite BackgrundImage;
@@ -39,7 +40,6 @@ public class Botoes : StateMachineBehaviour {
 	//}
 
 	void OnStateEnter(){
-
 		GameObject.Find ("GameManager").GetComponent<Animator> ().ResetTrigger ("Resposta1");
 		GameObject.Find ("GameManager").GetComponent<Animator> ().ResetTrigger ("Resposta2");
 		GameObject.Find ("GameManager").GetComponent<Animator> ().ResetTrigger ("PassMessage");
