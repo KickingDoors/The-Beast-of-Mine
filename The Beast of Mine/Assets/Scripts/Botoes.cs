@@ -10,10 +10,12 @@ public class Botoes : StateMachineBehaviour {
 	public string[] RespostaID;
     public string correctAnswerId;
     public bool DeveFecharBotoes = true;
-    
-	[Header("Visual")]
-	public Sprite BackgrundImage;
+
+    [Header("Visual")]
+    public Sprite BackgrundImage;
+    public string specificEffect;
     void OnStateEnter() {
+        GameObject.Find("GameManager").GetComponent<VFXManager>().handleEffect(specificEffect);
         // we register the correct answer id
         GameObject.Find("GameManager").GetComponent<AnswerCounter>().updatePreviousCorrectAnswer(correctAnswerId, RespostaID);
         Animator animator = GameObject.Find("GameManager").GetComponent<Animator>();
@@ -23,10 +25,10 @@ public class Botoes : StateMachineBehaviour {
 		MessageManager MM = GameObject.Find ("GameManager").GetComponent<MessageManager> ();
 		MM.CanPassMsg = false;
 		MM.WriteMessage (LanguageManager.Instance.GetTextValue(MensagemID).ToCharArray ());
-		if (BackgrundImage != null)
+        /*if (BackgrundImage != null)
         {
             MM.ShowImage(BackgrundImage);
-        }
+        }*/
 		for (int i = 0; i < RespostaID.Length; i++) {
 			GameObject.Find ("Btn" + (i + 1)).GetComponent<LayoutElement> ().ignoreLayout = false;
 			GameObject.Find ("Btn" + (i + 1)).GetComponent<Image> ().enabled = true;

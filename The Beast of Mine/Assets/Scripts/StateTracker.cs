@@ -4,7 +4,7 @@ using UnityEngine;
  * Class used in every steps of a sequence animator
  */
 public class StateTracker : StateMachineBehaviour {
-  
+
     private string[] answerModel;
     private AnswerCounter answerCounter;
     private Animator animator;
@@ -18,7 +18,7 @@ public class StateTracker : StateMachineBehaviour {
         animator = GameObject.Find("GameManager").GetComponent<Animator>();
         answerCounter = GameObject.Find("GameManager").GetComponent<AnswerCounter>();
         // at each state, we try to update the answer counter
-        updateAnswerCouter();
+        updateAnswerCounter();
         // TODO : delete following lines as it is for test purpose
         Debug.Log("correct answers : "+answerCounter.getCorrectAnswersNumber());
         Debug.Log("bad answers : " + answerCounter.getBadAnswersNumber());
@@ -27,7 +27,7 @@ public class StateTracker : StateMachineBehaviour {
     /**
      * Update the number of correct or bad answer based on the previous correct answer
      */
-    private void updateAnswerCouter()
+    private void updateAnswerCounter()
     {
         bool isAnswerCorrect = false;
         string previousCorrectAnswer = answerCounter.getPreviousCorrectAnswer();
@@ -35,7 +35,6 @@ public class StateTracker : StateMachineBehaviour {
         // we then have to check if the answer the user chose was the good one
         if (previousCorrectAnswer != "")
         {
-            Debug.Log(previousCorrectAnswer);
             // we loop through the answer model (Resposta 1 to 4)
             foreach (string answer in answerCounter.getAnswerModel())
             {
