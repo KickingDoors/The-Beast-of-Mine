@@ -10,7 +10,7 @@ public class TimeManager : MonoBehaviour {
 		// 1 - Death
 		for (float i = Duration; i > 0; i -= 0.1f) {
 			yield return new WaitForSeconds (0.1f);
-			print (i);
+			/*print (i);*/
 		}
 		if (ConsequenceID == 1) {
 			SceneManager.LoadScene (SceneManager.GetActiveScene ().name);

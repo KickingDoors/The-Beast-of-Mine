@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
@@ -9,7 +9,6 @@ public class GameManager : MonoBehaviour {
     public bool Paused = false;
     public Canvas PauseMenu;
     public Text LanguageBtn_Txt;
-
 	public void Die()
     {
         SceneManager.LoadScene("LoadingScreen");
