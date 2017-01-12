@@ -50,8 +50,7 @@ public class StateTracker : StateMachineBehaviour {
             if (isAnswerCorrect)
             {
                 answerCounter.updateCorrectAnswersNumber(1);
-            }
-            else
+            } else
             {
                 answerCounter.updateBadAnswersNumber(1);
             }

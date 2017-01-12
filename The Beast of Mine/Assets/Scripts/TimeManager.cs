@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
@@ -12,8 +12,10 @@ public class TimeManager : MonoBehaviour {
 			yield return new WaitForSeconds (0.1f);
 			/*print (i);*/
 		}
+        // inc bad answers by 1 if the timer ends
+        GameObject.Find("GameManager").GetComponent<AnswerCounter>().updateBadAnswersNumber(1);
 		if (ConsequenceID == 1) {
-			SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+            SceneReloader.loadScene(SceneManager.GetActiveScene().name);
 		} else if (ConsequenceID == 2) {
 
 			GetComponent<Animator> ().SetTrigger ("EndedTimer");

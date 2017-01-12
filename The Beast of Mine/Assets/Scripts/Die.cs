@@ -30,7 +30,6 @@ public class Die : StateMachineBehaviour {
 	//}
 
 	void OnStateEnter(){
-
-		SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
+        SceneReloader.loadScene(SceneManager.GetActiveScene().name);
 	}
 }

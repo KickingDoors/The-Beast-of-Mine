@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour {
     public Text LanguageBtn_Txt;
 	public void Die()
     {
-        SceneManager.LoadScene("LoadingScreen");
+        SceneReloader.loadScene("LoadingScreen");
         //LoadLast Checkpoint
     }
 
