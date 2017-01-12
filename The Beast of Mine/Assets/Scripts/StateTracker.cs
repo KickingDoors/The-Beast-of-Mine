@@ -19,31 +19,41 @@ public class StateTracker : StateMachineBehaviour {
         answerCounter = GameObject.Find("GameManager").GetComponent<AnswerCounter>();
         // at each state, we try to update the answer counter
         updateAnswerCouter();
-        // TODO : delete following line as it is for test purpose
+        // TODO : delete following lines as it is for test purpose
         Debug.Log("correct answers : "+answerCounter.getCorrectAnswersNumber());
+        Debug.Log("bad answers : " + answerCounter.getBadAnswersNumber());
     }
 
     /**
-     * Increment the number of correct answer of 1 if the previous correct answer matches  
+     * Update the number of correct or bad answer based on the previous correct answer
      */
     private void updateAnswerCouter()
     {
+        bool isAnswerCorrect = false;
         string previousCorrectAnswer = answerCounter.getPreviousCorrectAnswer();
         // if we had a previous correct answer, it means that in the previous state, the user had to click a button to choose an answer
         // we then have to check if the answer the user chose was the good one
         if (previousCorrectAnswer != "")
         {
+            Debug.Log(previousCorrectAnswer);
             // we loop through the answer model (Resposta 1 to 4)
             foreach (string answer in answerCounter.getAnswerModel())
             {
                 // if the animator triggered a change on an condition given in the answer model and that is the correct answer
                 if (animator.GetBool(answer) && answerCounter.getPreviousCorrectAnswer() == answer)
                 {
-                    Debug.Log("answer " + answer + " is correct ! ");
                     // then the user chose the good answer
-                    answerCounter.updateCorrectAnswersNumber(1);
+                    isAnswerCorrect = true;
                     break;
                 }
+            }
+            if (isAnswerCorrect)
+            {
+                answerCounter.updateCorrectAnswersNumber(1);
+            }
+            else
+            {
+                answerCounter.updateBadAnswersNumber(1);
             }
             // we reset the previous correct answer as we just consumed it
             answerCounter.resetPreviousCorrectAnswer();

@@ -8,8 +8,10 @@ public class AnswerCounter : MonoBehaviour {
 
     // number of correct answers the user has
     private int correctAnswersNumber = 0;
+    // number of bad answers the user has
+    private int badAnswersNumber = 0;
     // the name of the condition that was correct in the previous state (if exists)
-    private string previousCorrectAnswer;
+    private string previousCorrectAnswer = "";
     // model of answers based on the parameters of the animator which are also conditions to pass in the following state
     private string[] answerModel = { "Resposta1", "Resposta2", "Resposta3", "Resposta4" };
 
@@ -43,6 +45,16 @@ public class AnswerCounter : MonoBehaviour {
     public int getCorrectAnswersNumber()
     {
         return correctAnswersNumber;
+    }
+
+    public void updateBadAnswersNumber(int update)
+    {
+        badAnswersNumber += update;
+    }
+
+    public int getBadAnswersNumber()
+    {
+        return badAnswersNumber;
     }
 
     public string[] getAnswerModel()
