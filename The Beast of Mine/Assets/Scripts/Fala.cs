@@ -8,7 +8,6 @@ public class Fala : StateMachineBehaviour
 	public string MensagemID;
 
 	[Header("Visual")]
-	public Sprite BackgrundImage;
     public string specificEffect;
     void OnStateEnter(){
         GameObject.Find("GameManager").GetComponent<VFXManager>().handleEffect(specificEffect);

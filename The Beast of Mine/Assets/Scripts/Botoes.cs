@@ -25,10 +25,6 @@ public class Botoes : StateMachineBehaviour {
 		MessageManager MM = GameObject.Find ("GameManager").GetComponent<MessageManager> ();
 		MM.CanPassMsg = false;
 		MM.WriteMessage (LanguageManager.Instance.GetTextValue(MensagemID).ToCharArray ());
-        /*if (BackgrundImage != null)
-        {
-            MM.ShowImage(BackgrundImage);
-        }*/
 		for (int i = 0; i < RespostaID.Length; i++) {
 			GameObject.Find ("Btn" + (i + 1)).GetComponent<LayoutElement> ().ignoreLayout = false;
 			GameObject.Find ("Btn" + (i + 1)).GetComponent<Image> ().enabled = true;
