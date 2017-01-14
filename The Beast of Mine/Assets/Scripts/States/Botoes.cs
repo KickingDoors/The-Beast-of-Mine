@@ -12,8 +12,9 @@ public class Botoes : StateMachineBehaviour {
     public bool DeveFecharBotoes = true;
 
     [Header("Visual")]
-    public Sprite BackgrundImage;
     public string specificEffect;
+
+    private MessageManager MM;
     void OnStateEnter() {
         GameObject.Find("GameManager").GetComponent<VFXManager>().handleEffect(specificEffect);
         // we register the correct answer id
@@ -22,7 +23,7 @@ public class Botoes : StateMachineBehaviour {
         animator.ResetTrigger("Resposta1");
         animator.ResetTrigger ("Resposta2");
         animator.ResetTrigger ("PassMessage");
-		MessageManager MM = GameObject.Find ("GameManager").GetComponent<MessageManager> ();
+		MM = GameObject.Find ("GameManager").GetComponent<MessageManager> ();
 		MM.CanPassMsg = false;
 		MM.WriteMessage (LanguageManager.Instance.GetTextValue(MensagemID).ToCharArray ());
 		for (int i = 0; i < RespostaID.Length; i++) {
@@ -40,7 +41,7 @@ public class Botoes : StateMachineBehaviour {
 				GameObject.Find ("Btn" + (i + 1)).GetComponent<Image> ().enabled = false;
 				GameObject.Find ("Btn" + (i + 1) + "_Text").GetComponent<Text> ().enabled = false;
 			}
-            GameObject.Find("GameManager").GetComponent<MessageManager>().CanPassMsg = true;
+            MM.CanPassMsg = true;
 		}
     }
 }
