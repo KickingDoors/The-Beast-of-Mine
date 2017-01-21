@@ -14,7 +14,7 @@ public class VFXManager : MonoBehaviour{
     // the default user-friendly prefab name
     public string defaultPrefab;
     // the current prefab transform used
-    public Transform currentEffect;
+    private Transform currentEffect;
     // the user-friendly name of the current prefab used
     private string currentEffectName;
 
