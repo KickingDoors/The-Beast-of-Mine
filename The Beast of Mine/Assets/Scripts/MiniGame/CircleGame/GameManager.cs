@@ -21,6 +21,7 @@ namespace CircleGame
         public float delayDisplayEndGameMessage = 4.0f;
         private string resourcePath = "prefabs/CircleGame/";
         private GameObject canvas;
+
         private void Start()
         {
             canvas = GameObject.Find("Canvas");

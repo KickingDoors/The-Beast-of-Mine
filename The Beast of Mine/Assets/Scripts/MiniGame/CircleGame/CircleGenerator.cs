@@ -43,6 +43,7 @@ namespace CircleGame
             GameObject newObj = (GameObject)Instantiate(objectToGenerate, new Vector2(Random.Range(-10, 10), Random.Range(-4, 4)), Quaternion.identity);
             var innerCircle = newObj.transform.FindChild(GameObject.FindGameObjectWithTag("InnerCircle").transform.name).transform;
             innerCircle.GetComponent<SpriteRenderer>().color = Random.ColorHSV();
+ 
             if (gameManager.variableCircleScale)
             {
                 var randomScale = Random.Range(gameManager.minScale, gameManager.maxScale);
