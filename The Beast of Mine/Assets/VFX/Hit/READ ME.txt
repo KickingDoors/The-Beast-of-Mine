@@ -1,0 +1,6 @@
+Place it on a canvas.
+
+If the player get's hit, health should decrease and the Hit Trigger should be called, 
+this will make the screen flash and then go to the correct state.
+
+For regenerating Health, After a while, the Health int should just be increase and it will go to the correct state.
