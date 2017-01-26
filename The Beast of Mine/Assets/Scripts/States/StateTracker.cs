@@ -5,7 +5,6 @@ using UnityEngine;
  */
 public class StateTracker : StateMachineBehaviour {
 
-    private string[] answerModel;
     private AnswerCounter answerCounter;
     private Animator animator;
 
@@ -58,4 +57,5 @@ public class StateTracker : StateMachineBehaviour {
         }
         
     }
+   
 }

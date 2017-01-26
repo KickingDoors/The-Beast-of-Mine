@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using SmartLocalization;
+using System;
 
 public class MessageManager : MonoBehaviour {
 
@@ -10,11 +11,15 @@ public class MessageManager : MonoBehaviour {
 	public Text MainText;
 	public Image BackGround;
 	public string SavedCheckPoint;
+    
 
 	public char[] CurrentMessage;
 	public string DisplayingMsg;
 
-	void Start(){
+    private FadeOut fadeOutScript;
+    private bool hasFadeOut;
+
+    void Start(){
 
 		LanguageManager.Instance.ChangeLanguage ("pt-BR");
 
@@ -61,14 +66,35 @@ public class MessageManager : MonoBehaviour {
 
 		if (CanPassMsg == true) {
 			if (Input.GetKeyDown (KeyCode.Space)) {
-
-				Anim.SetTrigger ("PassMessage");
-			}
+                if(hasFadeOut)
+                {
+                    fadeOutScript.NotifyLaunchFadeOut();
+                } else
+                {
+                    GoNextState();
+                }
+                   
+            }
 		}
 	}
+
+    public void SetHasFadeOut(bool hasFO)
+    {
+        hasFadeOut = hasFO;
+    }
+
+    public void SetFadeOutScript(FadeOut script)
+    {
+        fadeOutScript = script;
+    }
 
 	public void ShowImage (Sprite sprite){
 
 		BackGround.sprite = sprite;
 	}
+
+    public void GoNextState()
+    {
+        Anim.SetTrigger("PassMessage");
+    }
 }

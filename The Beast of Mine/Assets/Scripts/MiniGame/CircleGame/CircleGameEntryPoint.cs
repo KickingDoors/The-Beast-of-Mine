@@ -4,7 +4,6 @@ public class CircleGameEntryPoint : MonoBehaviour {
 
     private GameObject miniGameManager;
     void Start () {
-        Debug.Log("test mini game");
         miniGameManager = new GameObject("miniGameManager");
         miniGameManager.AddComponent<CircleGame.GameManager>();
         miniGameManager.AddComponent<CircleGame.CircleGenerator>();

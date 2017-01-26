@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,53 +6,97 @@ using UnityEngine.UI;
 
 public class FadeManager : MonoBehaviour {
 
-    private bool ready = false;
+    private static bool ready = false;
     private bool finished = false;
-    private float alphaSpeed;
-    private bool isFading = false;
-    private GameObject fadeCanvas;
-    private Image fadeCanvasImage;
+    private static float alphaSpeed;
+    private static GameObject fadeCanvas;
+    private static Image fadeCanvasImage;
     public const string FADE_IN = "fadeIn";
     public const string FADE_OUT = "fadeOut";
+    private static Action callback;
+    private float deltaTimeCounter = 0;
+    private static string effect;
+    private static float duration;
 
-    public void init(GameObject fadeCanvas, float duration, string effect)
+    public static void Init(float durationTmp, string effectTmp, Action callbackTmp = null)
     {
-        this.isFading = true;
-        this.fadeCanvas = fadeCanvas;
-        alphaSpeed = 255 / (duration / Time.deltaTime);
-        fadeCanvasImage = fadeCanvas.GetComponent<Image>();
-        if (effect == FADE_IN)
+        duration = durationTmp;
+        effect = effectTmp;
+        callback = callbackTmp;
+        // if canvas was not instantiated yet, we do it here and we attach the fade manager to it
+        if(!fadeCanvas)
         {
-            alphaSpeed = -alphaSpeed;
-            this.changeFadeCanvasAlphaColor(255);
+            fadeCanvas = (GameObject)Instantiate(Resources.Load("prefabs/Fade/FadeCanvas"));
+            fadeCanvas.AddComponent<FadeManager>();
+        }
+        fadeCanvasImage = fadeCanvas.GetComponent<Image>();
+        // set the begin color of the canvas according to the fade effect we want
+        if (effectTmp == FADE_IN)
+        {
+            ChangeFadeCanvasAlphaColor(255);
         } else
         {
-            this.changeFadeCanvasAlphaColor(0);
+            ChangeFadeCanvasAlphaColor(0);
         }
-        this.fadeCanvas.SetActive(true);
+        // display the fadeCanvas
+        fadeCanvas.SetActive(true);
+        // set to ready so that we can enter into FixedUpdate
         ready = true;
-    }
-    private IEnumerator wait()
-    {
-        yield return new WaitForSeconds(1);
-    }
-    private void changeFadeCanvasAlphaColor(float val)
-    {
-        Color color = fadeCanvasImage.color;
-        color.a = val / 255.0F;
-        fadeCanvasImage.color = color;
     }
 	
 	void FixedUpdate () {
 		if(ready && !finished)
         {
-            changeFadeCanvasAlphaColor(fadeCanvasImage.color.a * 255.0F + alphaSpeed);
-            finished = fadeCanvasImage.color.a >= 1 || fadeCanvasImage.color.a <= 0;
+            deltaTimeCounter += Time.deltaTime;
+            ChangeFadeCanvasAlphaColor(GetNewColor());
+            finished = deltaTimeCounter >= duration;
             if(finished)
             {
-                this.fadeCanvas.SetActive(false);
-                this.isFading = false;
+                StopFade();
+                if(callback != null)
+                {
+                    callback();
+                    callback = null;
+                }
             }
         }
 	}
+
+    /**
+     * Change the alpha color of the fade canvas
+     */
+    private static void ChangeFadeCanvasAlphaColor(float val)
+    {
+        Color color = fadeCanvasImage.color;
+        color.a = val / 255.0F;
+        fadeCanvasImage.color = color;
+    }
+
+    /**
+     * Return the computed next alpha color of the canvas based on the accumulated delta time and the duration of the fade effect
+     */
+    private float GetColorVariation()
+    {
+        return (deltaTimeCounter / duration * 255);
+    }
+
+    /**
+     * Get the new alpha color of the canvas according to the fade effect
+     */
+    private float GetNewColor()
+    {
+        float colorVariation = GetColorVariation();
+        return effect == FADE_IN ? 255.0F - colorVariation : colorVariation;
+    }
+
+    /**
+     * Reset all the values for the next time and hide the canvas
+     */
+    public void StopFade()
+    {
+        fadeCanvas.SetActive(false);
+        ready = false;
+        finished = false;
+        deltaTimeCounter = 0;
+    }
 }
