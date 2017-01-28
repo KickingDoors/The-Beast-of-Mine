@@ -13,68 +13,82 @@ public class VFXManager : MonoBehaviour{
     public List<Transform> prefabTransforms;
     // the default user-friendly prefab name
     public string defaultPrefab;
-    // the current prefab transform used
-    private Transform currentEffect;
     // the user-friendly name of the current prefab used
     private string currentEffectName;
+    private List<Transform> instantiedPrefabTransforms = new List<Transform>();
 
-    /**
-     * Load the default background when we launch the scene
-     */
-    void Start () {
-        loadDefaultEffect();
-	}
-
-    /**
-     * Load a new effect into the scene
-     */
-    public void loadEffect(string prefabName)
+    void Awake()
     {
-        if(currentEffect)
-        {
-            Destroy(currentEffect.gameObject);
-        }
-        currentEffect = (Transform) Instantiate((UnityEngine.Object)getPrefab(prefabName));
-        currentEffectName = prefabName;
+        loadAllEffects();
     }
 
-    public void loadDefaultEffect()
+    /**
+     * Loads all effects into the scene for CPU performance
+     */
+    private void loadAllEffects()
     {
-        loadEffect(defaultPrefab);
+        Transform vfx;
+        String vfxName;
+        int prefabTransformsLength = prefabTransforms.Count;
+
+        for (var i = 0; i < prefabTransformsLength; i++)
+        {
+            vfxName = prefabNames[i];
+            // instantiate the vfx
+            vfx = (Transform)Instantiate((UnityEngine.Object)prefabTransforms[i]);
+            vfx.gameObject.name = vfxName;
+            if (vfxName == defaultPrefab) // default prefab
+            {
+                vfx.gameObject.SetActive(true);
+                currentEffectName = vfxName;
+            }
+            else // other prefabs
+            {
+                vfx.gameObject.SetActive(false);
+            }
+            instantiedPrefabTransforms.Add(vfx);
+        }
+    }
+
+    /**
+     * Change the currently displayed effect
+     */
+    public void changeEffect(string prefabName)
+    {
+        // deactivate current effect
+        int currentEffectIndex = instantiedPrefabTransforms.IndexOf(getInstantiatedPrefab(currentEffectName));
+        instantiedPrefabTransforms[currentEffectIndex].gameObject.SetActive(false);
+        // activate next effect and save it as the new current effect
+        int nextEffectIndex = instantiedPrefabTransforms.IndexOf(getInstantiatedPrefab(prefabName));
+        instantiedPrefabTransforms[nextEffectIndex].gameObject.SetActive(true);
+        currentEffectName = prefabName;
     }
 
     /**
      * Given a prefabName :
-     *  - if the prefab name is not empty or if the current prefab is not the default prefab, then we load a new effect accordingly
+     *  - if the prefab name is not empty or if the current prefab is not the default prefab, then we change the effect accordingly
      */
     public void handleEffect(string prefabName)
     {
-        if(prefabName != "")
+        if(prefabName != "") // if we have a specific effect
         {
-            if(currentEffectName != prefabName)
+            if(currentEffectName != prefabName) // if the specific effect is not already the current effect
             {
-                loadEffect(prefabName);
+                changeEffect(prefabName);
             }
-        } else if(currentEffectName != defaultPrefab)
+        } else if(currentEffectName != defaultPrefab) // else if the current effect is not the default one
         {
-            loadDefaultEffect();
+            // change current effect to the default one
+            changeEffect(defaultPrefab);
         }
     }
 
     /**
-     * Utility to easily get a prefab transform based on a prefab name
+     * Utility to easily get an instantiated prefab transform based on a prefab name
      */
-    private Transform getPrefab(string prefabName)
+    private Transform getInstantiatedPrefab(string prefabName)
     {
-        if (!prefabNames.Contains(prefabName))
-        {
-            throw new Exception("Error, the prefab name" + prefabName + " is not is the array of prefabNames. Check the array on the game manager object, in the VXFManager section.");
-        }
         var prefabIndex = prefabNames.IndexOf(prefabName);
-        if (prefabIndex > prefabTransforms.Count)
-        {
-            throw new Exception("Error, there is no element at index " + prefabIndex + " in the array of prefabTransforms. Check the array on the game manager object, in the VXFManager section.");
-        }
-        return prefabTransforms[prefabIndex];
+        return instantiedPrefabTransforms[prefabIndex];
     }
 }
