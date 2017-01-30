@@ -15,6 +15,7 @@ public class VFXManager : MonoBehaviour{
     public string defaultPrefab;
     // the user-friendly name of the current prefab used
     private string currentEffectName;
+    // list of prefabs we've instantiated
     private List<Transform> instantiedPrefabTransforms = new List<Transform>();
 
     void Awake()
