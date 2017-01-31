@@ -63,9 +63,9 @@ public class MessageManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-		if (CanPassMsg == true) {
-			if (Input.GetKeyDown (KeyCode.Space)) {
+		if ((CanPassMsg == true && Input.GetKeyDown(KeyCode.Space)) // fala and space
+            || Anim.GetBool("Resposta1") // botoes and answer 1
+            || Anim.GetBool("Resposta2")) { // botoes and answer2
                 if(hasFadeOut)
                 {
                     fadeOutScript.NotifyLaunchFadeOut();
@@ -73,8 +73,6 @@ public class MessageManager : MonoBehaviour {
                 {
                     GoNextState();
                 }
-                   
-            }
 		}
 	}
 

@@ -7,6 +7,8 @@ public class FadeOut : StateMachineBehaviour
 {
 
     public float fadeDuration = 1;
+    // required bool for botoes states using fade out as it is launched per update
+    private bool hasInitiated = false;
 
     private MessageManager messageManager;
     void OnStateEnter()
@@ -21,7 +23,11 @@ public class FadeOut : StateMachineBehaviour
      */
     public void NotifyLaunchFadeOut()
     {
-        FadeManager.Init(fadeDuration, FadeManager.FADE_OUT, goNextState);
+        if(!hasInitiated) // check that we didn't already init (useful for botoes states as explained in var declaration)
+        {
+            FadeManager.Init(fadeDuration, FadeManager.FADE_OUT, goNextState);
+            hasInitiated = true;
+        }
     }
 
     /**
