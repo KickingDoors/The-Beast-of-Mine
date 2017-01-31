@@ -28,7 +28,7 @@ public class Botoes : StateMachineBehaviour {
 		MM.WriteMessage (LanguageManager.Instance.GetTextValue(MensagemID).ToCharArray ());
 		for (int i = 0; i < RespostaID.Length; i++) {
 			GameObject.Find ("Btn" + (i + 1)).GetComponent<LayoutElement> ().ignoreLayout = false;
-			GameObject.Find ("Btn" + (i + 1)).GetComponent<Image> ().enabled = true;
+			//GameObject.Find ("Btn" + (i + 1)).GetComponent<Image> ().enabled = true;
 			GameObject.Find ("Btn" + (i + 1) + "_Text").GetComponent<Text> ().enabled = true;
 			GameObject.Find ("Btn" + (i + 1) + "_Text").GetComponent<Text> ().text = LanguageManager.Instance.GetTextValue(RespostaID [i]);
 		}
