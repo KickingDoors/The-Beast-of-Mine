@@ -12,6 +12,8 @@ public class MessageManager : MonoBehaviour {
 	public Image BackGround;
 	public string SavedCheckPoint;
     
+	[SerializeField]
+	private Animator TextAnim;
 
 	public char[] CurrentMessage;
 	public string DisplayingMsg;
@@ -50,14 +52,17 @@ public class MessageManager : MonoBehaviour {
 
 	IEnumerator WriteMsg (){
 
+
+		TextAnim.SetBool ("visible", true);
+
 		for (int i = 0; i < CurrentMessage.Length; i++) {
 
-			yield return null;
-			yield return null;
+			//yield return null;
 
 			DisplayingMsg += CurrentMessage [i];
 			MainText.text = DisplayingMsg;
 		}
+
 		yield return null;
 	}
 
@@ -69,9 +74,12 @@ public class MessageManager : MonoBehaviour {
                 if(hasFadeOut)
                 {
                     fadeOutScript.NotifyLaunchFadeOut();
+					TextAnim.SetBool ("visible", false);
                 } else
                 {
-                    GoNextState();
+					TextAnim.SetBool ("visible", false);
+					StartCoroutine ("WaitAndPassMsg");
+                    //GoNextState();
                 }
 		}
 	}
@@ -93,6 +101,12 @@ public class MessageManager : MonoBehaviour {
 
     public void GoNextState()
     {
-        Anim.SetTrigger("PassMessage");
+		Anim.SetTrigger("PassMessage");
     }
+
+	IEnumerator WaitAndPassMsg(){
+
+		yield return new WaitForSeconds (0.5f);
+		Anim.SetTrigger("PassMessage");
+	}
 }
