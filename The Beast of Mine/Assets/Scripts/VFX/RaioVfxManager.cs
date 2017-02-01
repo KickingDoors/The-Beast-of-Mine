@@ -13,7 +13,7 @@ public class RaioVfxManager : MonoBehaviour, ObserverPattern.Observer  {
     private bool isEnabled = false;
     public void OnNotify(string eventName)
     {
-        if(eventName == RAIN_VFX)
+        if (eventName == RAIN_VFX)
         {
             isEnabled = true;
             if (!raio)
@@ -50,6 +50,5 @@ public class RaioVfxManager : MonoBehaviour, ObserverPattern.Observer  {
     {
         currentTime = 0;
         nextLightningSoundTime = Random.Range(MIN_LIGHTNING_SOUND_TIME, MAX_LIGHTNING_SOUND_TIME);
-        Debug.Log("next lightning in " + nextLightningSoundTime + " s");
     }
 }
