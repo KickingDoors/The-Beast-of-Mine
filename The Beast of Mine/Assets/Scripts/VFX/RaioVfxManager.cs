@@ -15,7 +15,6 @@ public class RaioVfxManager : MonoBehaviour, ObserverPattern.Observer  {
     {
         if (eventName == RAIN_VFX)
         {
-            isEnabled = true;
             if (!raio)
             {
                 raio = (GameObject)Instantiate(Resources.Load("prefabs/Raio/Raio", typeof(GameObject)));
@@ -23,6 +22,7 @@ public class RaioVfxManager : MonoBehaviour, ObserverPattern.Observer  {
                 raioAnimator = raio.GetComponent<Animator>();
             }
             generateNextLightningSoundTime(); // generate next time we must trigger the lightning sound
+            isEnabled = true;
         } else
         {
             isEnabled = false;
