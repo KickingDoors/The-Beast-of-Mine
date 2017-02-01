@@ -116,8 +116,40 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="01" xml:space="preserve">
+		<value>Você sente o seu sangue esvair das suas veias e banhar a sua pele…
+</value>
+	</data>
+	<data name="010" xml:space="preserve">
+		<value>E o mesmo aparece no cômodo com uma pequena vela acesa em mãos e com uma cara de poucos amigos.
+</value>
+	</data>
+	<data name="02" xml:space="preserve">
+		<value>Os machucados que fizera no percurso somados aos que outrora já residiam em seu corpo sugaram toda a sua energia, assim como a sua consciência.</value>
+	</data>
+	<data name="03" xml:space="preserve">
+		<value>Seus olhos fecham sem permissão...seu corpo deita na terra inerte…</value>
+	</data>
+	<data name="04" xml:space="preserve">
+		<value>Você não conseguiu chegar a tempo...desapontou a si mesmo e tudo o que você pode contar agora é com a sorte.</value>
+	</data>
+	<data name="05" xml:space="preserve">
+		<value>Você acorda deitado sobre o tapete de pele da já conhecida sala escura e fria da sua casa.</value>
+	</data>
+	<data name="06" xml:space="preserve">
+		<value>“Mas como você eu cheguei até aqui?!” você se pergunta.</value>
+	</data>
+	<data name="07" xml:space="preserve">
+		<value>A dor já não é mesma...pois seus ferimentos estão adormecidos com umas plantas medicinais e enfaixados com panos.</value>
+	</data>
+	<data name="08" xml:space="preserve">
+		<value>Mestre… </value>
+	</data>
+	<data name="09" xml:space="preserve">
+		<value>Um homem de cabelo grisalho com uma cicatriz no rosto Seu físico de certa idade, mas com cicatrizes e olhos que guardam incontáveis histórias</value>
+	</data>
 	<data name="1" xml:space="preserve">
-		<value>QTE - 1</value>
+		<value>CAPÍTULO 1</value>
 	</data>
 	<data name="10" xml:space="preserve">
 		<value>Pular</value>
@@ -135,10 +167,10 @@
 		<value>Você tropeçou no buraco, seu calcanhar lateja, talvez  o torceu? Mas a dor não importa...você precisa continuar correndo</value>
 	</data>
 	<data name="12" xml:space="preserve">
-		<value>Você não precisa enxergar para saber onde está indo. Conhece aquele lugar, seu lar.  Tudo o que você é e aprendeu, veio desse lugar…</value>
+		<value>Você não precisa enxergar para saber onde está indo. Conhece aquele lugar, seu lar.  Tudo o que você é e aprendeu, veio deste lugar…</value>
 	</data>
 	<data name="13" xml:space="preserve">
-		<value>Há um tronco caído no meio do caminho</value>
+		<value>Há um tronco caído no meio do caminho.</value>
 	</data>
 	<data name="14" xml:space="preserve">
 		<value>Passar por cima</value>
@@ -150,10 +182,10 @@
 		<value>O tronco está escorregadio devido a chuva, você acabou caindo na poça de lama e ralou os joelhos na queda </value>
 	</data>
 	<data name="17" xml:space="preserve">
-		<value>Apesar de mais seguro, você tomou muito tempo dando a volta e o tempo aqui é precioso demais para ser desperdiçado</value>
+		<value>Apesar de mais seguro, você tomou muito tempo dando a volta e o tempo aqui é precioso demais para ser desperdiçado.</value>
 	</data>
 	<data name="18" xml:space="preserve">
-		<value>Corra</value>
+		<value>Corra!</value>
 	</data>
 	<data name="19" xml:space="preserve">
 		<value>O galho de uma árvore aparece no seu campo de visão</value>
@@ -165,7 +197,7 @@
 		<value>Desviar </value>
 	</data>
 	<data name="21" xml:space="preserve">
-		<value>Seu rosto colidiu contra o galho adicionando mais alguns cortes a sua face já danificada</value>
+		<value>Seu rosto colidiu contra o galho adicionando mais alguns cortes a sua face já danificada.</value>
 	</data>
 	<data name="22" xml:space="preserve">
 		<value>Suas pernas movem velozmente enquanto seu corpo se choca contra as gotas. A água lava o seu sangue, umedece as suas feridas.</value>
@@ -174,7 +206,7 @@
 		<value>Há uma ponte logo a frente, mas ela parece não estar em boas condições</value>
 	</data>
 	<data name="24" xml:space="preserve">
-		<value>Passar pela ponte </value>
+		<value>Passar pela ponte</value>
 	</data>
 	<data name="25" xml:space="preserve">
 		<value>Descer a depressão rochosa</value>
@@ -192,7 +224,7 @@
 		<value>Você precisa chegar na sua casa...e depressa…</value>
 	</data>
 	<data name="3" xml:space="preserve">
-		<value>Você avista uma bifurcação na mata, do lado direito parece ter mais presença da luz do que o da esquerda</value>
+		<value>Você avista uma bifurcação na mata, o lado direito parece ter mais presença da luz do que o da esquerda.</value>
 	</data>
 	<data name="30" xml:space="preserve">
 		<value>Há um atalho logo a frente, mas apesar de ser mais rápido ele pode ser mais perigoso</value>
@@ -225,7 +257,7 @@
 		<value>Mesmo preocupado ele dá atenção aos ferimentos, estancando-os com bandanas e plantas medicinais antes de dizer uma palavra se quer.</value>
 	</data>
 	<data name="4" xml:space="preserve">
-		<value>Ir para a direita</value>
+		<value>Direita</value>
 	</data>
 	<data name="40" xml:space="preserve">
 		<value>Mestre : Mas que diabos aconteceu com você? </value>
@@ -249,7 +281,7 @@
 		<value>M: Estou vendo, você está com lama, sangue e cortes por todo o corpo. Você está super bem! </value>
 	</data>
 	<data name="47" xml:space="preserve">
-		<value>Aprendiz: É…</value>
+		<value>A: É…</value>
 	</data>
 	<data name="48" xml:space="preserve">
 		<value>M: Eu te encontrei quase morto lá fora.</value>
@@ -258,10 +290,10 @@
 		<value>M: Você entrou aqui quase morto.</value>
 	</data>
 	<data name="5" xml:space="preserve">
-		<value>Ir para esquerda </value>
+		<value>Esquerda</value>
 	</data>
 	<data name="50" xml:space="preserve">
-		<value>FRASE PLACEHOLDER</value>
+		<value>fraseplaceholder</value>
 	</data>
 	<data name="51" xml:space="preserve">
 		<value>M: Vamos diga. Quem fez isso com você? </value>
@@ -291,7 +323,7 @@
 		<value>M: Continue… Me diga do que você se lembra.</value>
 	</data>
 	<data name="6" xml:space="preserve">
-		<value>As poças d'água refletem a luz prejudicando a sua visão já quase ineficiente devido a chuva e seus ferimentos no rostoDificultando você desviar dos galhos e espinhos pelo caminho que cortam a sua pele com o atrito</value>
+		<value>As poças d'água refletem a luz prejudicando a sua visão já quase ineficiente devido a chuva e seus ferimentos no rosto. Dificultando você desviar dos galhos e espinhos pelo caminho que cortam a sua pele com o atrito.</value>
 	</data>
 	<data name="60" xml:space="preserve">
 		<value>Queixar-se</value>
@@ -324,7 +356,7 @@
 		<value>A: Sim! E seus olhos, eram os olhos mais assustadores que eu já vi. Como se em cada entranha do animal morasse a morte</value>
 	</data>
 	<data name="7" xml:space="preserve">
-		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz</value>
+		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz.</value>
 	</data>
 	<data name="70" xml:space="preserve">
 		<value>M: Eu estou cansado das suas gracinhas, continue assim e você não vai gostar da consequência. </value>
@@ -357,7 +389,7 @@
 		<value>A: Mas como ela morreu? Foi uma doença? Ou alguém a matou?</value>
 	</data>
 	<data name="8" xml:space="preserve">
-		<value>A chuva caí intensamente sobe as folhas largas da árvores, mas não impede encharcar as suas roupas.</value>
+		<value>A chuva cai intensamente sobre as folhas largas das árvores, mas não impede de encharcar as suas roupas.</value>
 	</data>
 	<data name="80" xml:space="preserve">
 		<value>A: Você conseguiu ver quem a matou? Ou ela já estava morta quando o senhor chegou?</value>
