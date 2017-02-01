@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class RaioVfxManager : MonoBehaviour, ObserverPattern.Observer  {
 
-    private const float MIN_LIGHTNING_SOUND_TIME = 10;
-    private const float MAX_LIGHTNING_SOUND_TIME = 15;
+    private const float MIN_LIGHTNING_SOUND_TIME = 4;
+    private const float MAX_LIGHTNING_SOUND_TIME = 8;
     private float nextLightningSoundTime;
     private float currentTime = 0;
     private const string RAIN_VFX = "rain";
