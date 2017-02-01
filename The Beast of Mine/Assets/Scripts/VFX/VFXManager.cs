@@ -17,10 +17,14 @@ public class VFXManager : MonoBehaviour{
     private string currentEffectName;
     // list of prefabs we've instantiated
     private List<Transform> instantiedPrefabTransforms = new List<Transform>();
-
+    private ObserverPattern.Subject subject = new ObserverPattern.Subject();
     void Awake()
     {
+        GameObject gameManager = GameObject.Find("GameManager");
+        gameManager.AddComponent<RaioVfxManager>();
+        subject.AddObserver(gameManager.GetComponent<RaioVfxManager>());
         loadAllEffects();
+        
     }
 
     /**
@@ -42,6 +46,7 @@ public class VFXManager : MonoBehaviour{
             {
                 vfx.gameObject.SetActive(true);
                 currentEffectName = vfxName;
+                subject.Notify(currentEffectName); // notify observers that we set a vfx effect
             }
             else // other prefabs
             {
@@ -50,6 +55,7 @@ public class VFXManager : MonoBehaviour{
             instantiedPrefabTransforms.Add(vfx);
         }
     }
+
 
     /**
      * Change the currently displayed effect
@@ -63,6 +69,7 @@ public class VFXManager : MonoBehaviour{
         int nextEffectIndex = instantiedPrefabTransforms.IndexOf(getInstantiatedPrefab(prefabName));
         instantiedPrefabTransforms[nextEffectIndex].gameObject.SetActive(true);
         currentEffectName = prefabName;
+        subject.Notify(currentEffectName); // notify observers that we set a vfx effect
     }
 
     /**
