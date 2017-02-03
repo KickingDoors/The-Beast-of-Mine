@@ -116,6 +116,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="01" xml:space="preserve">
+		<value />
+	</data>
+	<data name="010" xml:space="preserve">
+		<value />
+	</data>
+	<data name="02" xml:space="preserve">
+		<value />
+	</data>
+	<data name="03" xml:space="preserve">
+		<value />
+	</data>
+	<data name="04" xml:space="preserve">
+		<value />
+	</data>
+	<data name="05" xml:space="preserve">
+		<value />
+	</data>
+	<data name="06" xml:space="preserve">
+		<value />
+	</data>
+	<data name="07" xml:space="preserve">
+		<value />
+	</data>
+	<data name="08" xml:space="preserve">
+		<value />
+	</data>
+	<data name="09" xml:space="preserve">
+		<value />
+	</data>
 	<data name="1" xml:space="preserve">
 		<value>You run towards the mud filled path without even seeing whats right in front of you.</value>
 	</data>
@@ -420,36 +450,6 @@
 		<value />
 	</data>
 	<data name="99" xml:space="preserve">
-		<value />
-	</data>
-	<data name="01" xml:space="preserve">
-		<value />
-	</data>
-	<data name="02" xml:space="preserve">
-		<value />
-	</data>
-	<data name="03" xml:space="preserve">
-		<value />
-	</data>
-	<data name="04" xml:space="preserve">
-		<value />
-	</data>
-	<data name="05" xml:space="preserve">
-		<value />
-	</data>
-	<data name="06" xml:space="preserve">
-		<value />
-	</data>
-	<data name="07" xml:space="preserve">
-		<value />
-	</data>
-	<data name="08" xml:space="preserve">
-		<value />
-	</data>
-	<data name="09" xml:space="preserve">
-		<value />
-	</data>
-	<data name="010" xml:space="preserve">
 		<value />
 	</data>
 </root>

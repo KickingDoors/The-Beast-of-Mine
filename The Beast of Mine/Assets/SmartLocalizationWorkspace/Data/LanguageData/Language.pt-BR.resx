@@ -155,22 +155,22 @@
 		<value>Pular</value>
 	</data>
 	<data name="100" xml:space="preserve">
-		<value>A: Que jornada velho?</value>
+		<value>Aprendiz: Que jornada velho?</value>
 	</data>
 	<data name="101" xml:space="preserve">
-		<value>A: Do que o senhor está falando, que jornada?</value>
+		<value>Aprendiz: Do que o senhor está falando, que jornada?</value>
 	</data>
 	<data name="102" xml:space="preserve">
-		<value>M: A jornada que você começará para resgatar o seu amuleto, antes que seja tarde mais.</value>
+		<value>Mestre: A jornada que você começará para resgatar o seu amuleto, antes que seja tarde mais.</value>
 	</data>
 	<data name="11" xml:space="preserve">
 		<value>Você tropeçou no buraco, seu calcanhar lateja, talvez  o torceu? Mas a dor não importa...você precisa continuar correndo</value>
 	</data>
 	<data name="12" xml:space="preserve">
-		<value>Você não precisa enxergar para saber onde está indo. Conhece aquele lugar, seu lar.  Tudo o que você é e aprendeu, veio deste lugar…</value>
+		<value>Você não precisa enxergar para saber onde está indo. Conhece aquele lugar, seu lar.  Tudo o que você é e aprendeu, veio desse lugar…</value>
 	</data>
 	<data name="13" xml:space="preserve">
-		<value>Há um tronco caído no meio do caminho.</value>
+		<value>Há um tronco caído no meio do caminho</value>
 	</data>
 	<data name="14" xml:space="preserve">
 		<value>Passar por cima</value>
@@ -182,10 +182,10 @@
 		<value>O tronco está escorregadio devido a chuva, você acabou caindo na poça de lama e ralou os joelhos na queda </value>
 	</data>
 	<data name="17" xml:space="preserve">
-		<value>Apesar de mais seguro, você tomou muito tempo dando a volta e o tempo aqui é precioso demais para ser desperdiçado.</value>
+		<value>Apesar de mais seguro, você tomou muito tempo dando a volta e o tempo aqui é precioso demais para ser desperdiçado</value>
 	</data>
 	<data name="18" xml:space="preserve">
-		<value>Corra!</value>
+		<value>Corra</value>
 	</data>
 	<data name="19" xml:space="preserve">
 		<value>O galho de uma árvore aparece no seu campo de visão</value>
@@ -197,7 +197,7 @@
 		<value>Desviar </value>
 	</data>
 	<data name="21" xml:space="preserve">
-		<value>Seu rosto colidiu contra o galho adicionando mais alguns cortes a sua face já danificada.</value>
+		<value>Seu rosto colidiu contra o galho adicionando mais alguns cortes a sua face já danificada</value>
 	</data>
 	<data name="22" xml:space="preserve">
 		<value>Suas pernas movem velozmente enquanto seu corpo se choca contra as gotas. A água lava o seu sangue, umedece as suas feridas.</value>
@@ -260,7 +260,7 @@
 		<value>Direita</value>
 	</data>
 	<data name="40" xml:space="preserve">
-		<value>Mestre : Mas que diabos aconteceu com você? </value>
+		<value>Mestre: Mas que diabos aconteceu com você? </value>
 	</data>
 	<data name="41" xml:space="preserve">
 		<value>Ser irônico </value>
@@ -275,19 +275,19 @@
 		<value>Aprendiz: Ei calma mestre, estou bem, não estou?</value>
 	</data>
 	<data name="45" xml:space="preserve">
-		<value>M: Não é hora para brincadeiras, o que aconteceu contigo?... e como assim corvo assassino?</value>
+		<value>Mestre: Não é hora para brincadeiras, o que aconteceu contigo?... e como assim corvo assassino?</value>
 	</data>
 	<data name="46" xml:space="preserve">
-		<value>M: Estou vendo, você está com lama, sangue e cortes por todo o corpo. Você está super bem! </value>
+		<value>Mestre: Estou vendo, você está com lama, sangue e cortes por todo o corpo. Você está super bem! </value>
 	</data>
 	<data name="47" xml:space="preserve">
-		<value>A: É…</value>
+		<value>Aprendiz: É…</value>
 	</data>
 	<data name="48" xml:space="preserve">
-		<value>M: Eu te encontrei quase morto lá fora.</value>
+		<value>Mestre: Eu te encontrei quase morto lá fora.</value>
 	</data>
 	<data name="49 " xml:space="preserve">
-		<value>M: Você entrou aqui quase morto.</value>
+		<value>Mestre: Você entrou aqui quase morto.</value>
 	</data>
 	<data name="5" xml:space="preserve">
 		<value>Esquerda</value>
@@ -296,7 +296,7 @@
 		<value>fraseplaceholder</value>
 	</data>
 	<data name="51" xml:space="preserve">
-		<value>M: Vamos diga. Quem fez isso com você? </value>
+		<value>Mestre: Vamos diga. Quem fez isso com você? </value>
 	</data>
 	<data name="52" xml:space="preserve">
 		<value>Se irritar</value>
@@ -305,22 +305,22 @@
 		<value>Responder </value>
 	</data>
 	<data name="54" xml:space="preserve">
-		<value>A: Você faz muitas perguntas não acha? Me deixa em paz, nem o meu pai você é!</value>
+		<value>Aprendiz: Você faz muitas perguntas não acha? Me deixa em paz, nem o meu pai você é!</value>
 	</data>
 	<data name="55" xml:space="preserve">
-		<value>A: Eu não sei direito mestre, eu só me lembro de alguns flashes e relances. Tudo foi tão rápido.</value>
+		<value>Aprendiz: Eu não sei direito mestre, eu só me lembro de alguns flashes e relances. Tudo foi tão rápido.</value>
 	</data>
 	<data name="56" xml:space="preserve">
-		<value>M: Você não tem direito de falar assim comigo, eu te criei. Você pode não me considerar como seu pai, mas eu tenho direito de saber!</value>
+		<value>Mestre: Você não tem direito de falar assim comigo, eu te criei. Você pode não me considerar como seu pai, mas eu tenho direito de saber!</value>
 	</data>
 	<data name="57" xml:space="preserve">
-		<value>M: Tudo bem jovem, com o tempo você vai se lembrar, fale apenas do que você se recorda.</value>
+		<value>Mestre: Tudo bem jovem, com o tempo você vai se lembrar, fale apenas do que você se recorda.</value>
 	</data>
 	<data name="58" xml:space="preserve">
-		<value>A: OK… Eu me lembro que eu estava fazendo a ronda na área como o senhor me pediu, quando eu ouvi um choro. E a partir daí começa a ficar tudo confuso.</value>
+		<value>Aprendiz: OK… Eu me lembro que eu estava fazendo a ronda na área como o senhor me pediu, quando eu ouvi um choro. E a partir daí começa a ficar tudo confuso.</value>
 	</data>
 	<data name="59" xml:space="preserve">
-		<value>M: Continue… Me diga do que você se lembra.</value>
+		<value>Mestre: Continue… Me diga do que você se lembra.</value>
 	</data>
 	<data name="6" xml:space="preserve">
 		<value>As poças d'água refletem a luz prejudicando a sua visão já quase ineficiente devido a chuva e seus ferimentos no rosto. Dificultando você desviar dos galhos e espinhos pelo caminho que cortam a sua pele com o atrito.</value>
@@ -332,16 +332,16 @@
 		<value>Prosseguir</value>
 	</data>
 	<data name="62" xml:space="preserve">
-		<value>A: Parece que eu não tenho escolha neh?</value>
+		<value>Aprendiz: Parece que eu não tenho escolha neh?</value>
 	</data>
 	<data name="63" xml:space="preserve">
-		<value>A: Humm… beleza</value>
+		<value>Aprendiz: Humm… beleza</value>
 	</data>
 	<data name="64" xml:space="preserve">
-		<value>A: Eu lembro de um corvo, mas não era um corvo qualquer…</value>
+		<value>Aprendiz: Eu lembro de um corvo, mas não era um corvo qualquer…</value>
 	</data>
 	<data name="65" xml:space="preserve">
-		<value>M: Como assim um corvo? Ele era maior que os corvos normais, e tinha um cheiro de podridão?</value>
+		<value>Mestre: Como assim um corvo? Ele era maior que os corvos normais, e tinha um cheiro de podridão?</value>
 	</data>
 	<data name="66" xml:space="preserve">
 		<value>Ser sarcástico </value>
@@ -350,10 +350,10 @@
 		<value>Concordar</value>
 	</data>
 	<data name="68" xml:space="preserve">
-		<value>A: Isso mesmo! e ele também tinha um cifre e defecava arco-íris</value>
+		<value>Aprendiz: Isso mesmo! e ele também tinha um cifre e defecava arco-íris</value>
 	</data>
 	<data name="69" xml:space="preserve">
-		<value>A: Sim! E seus olhos, eram os olhos mais assustadores que eu já vi. Como se em cada entranha do animal morasse a morte</value>
+		<value>Aprendiz: Sim! E seus olhos, eram os olhos mais assustadores que eu já vi. Como se em cada entranha do animal morasse a morte</value>
 	</data>
 	<data name="7" xml:space="preserve">
 		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz.</value>
@@ -389,7 +389,7 @@
 		<value>A: Mas como ela morreu? Foi uma doença? Ou alguém a matou?</value>
 	</data>
 	<data name="8" xml:space="preserve">
-		<value>A chuva cai intensamente sobre as folhas largas das árvores, mas não impede de encharcar as suas roupas.</value>
+		<value>A chuva caí intensamente sobe as folhas largas da árvores, mas não impede encharcar as suas roupas.</value>
 	</data>
 	<data name="80" xml:space="preserve">
 		<value>A: Você conseguiu ver quem a matou? Ou ela já estava morta quando o senhor chegou?</value>

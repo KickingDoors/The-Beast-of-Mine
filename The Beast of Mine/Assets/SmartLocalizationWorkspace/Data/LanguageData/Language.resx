@@ -116,6 +116,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="01" xml:space="preserve">
+		<value>Você sente o seu sangue esvair das suas veias e banhar a sua pele…
+</value>
+	</data>
+	<data name="010" xml:space="preserve">
+		<value>E o mesmo aparece no cômodo com uma pequena vela acesa em mãos e com uma cara de poucos amigos.
+</value>
+	</data>
+	<data name="02" xml:space="preserve">
+		<value>Os machucados que fizera no percurso somados aos que outrora já residiam em seu corpo sugaram toda a sua energia, assim como a sua consciência.</value>
+	</data>
+	<data name="03" xml:space="preserve">
+		<value>Seus olhos fecham sem permissão...seu corpo deita na terra inerte…</value>
+	</data>
+	<data name="04" xml:space="preserve">
+		<value>Você não conseguiu chegar a tempo...desapontou a si mesmo e tudo o que você pode contar agora é com a sorte.</value>
+	</data>
+	<data name="05" xml:space="preserve">
+		<value>Você acorda deitado sobre o tapete de pele da já conhecida sala escura e fria da sua casa.</value>
+	</data>
+	<data name="06" xml:space="preserve">
+		<value>“Mas como você eu cheguei até aqui?!” você se pergunta.</value>
+	</data>
+	<data name="07" xml:space="preserve">
+		<value>A dor já não é mesma...pois seus ferimentos estão adormecidos com umas plantas medicinais e enfaixados com panos.</value>
+	</data>
+	<data name="08" xml:space="preserve">
+		<value>Mestre… </value>
+	</data>
+	<data name="09" xml:space="preserve">
+		<value>Um homem de cabelo grisalho com uma cicatriz no rosto Seu físico de certa idade, mas com cicatrizes e olhos que guardam incontáveis histórias</value>
+	</data>
 	<data name="1" xml:space="preserve">
 		<value>CAPÍTULO 1</value>
 	</data>
@@ -123,13 +155,13 @@
 		<value>Pular</value>
 	</data>
 	<data name="100" xml:space="preserve">
-		<value>A: Que jornada velho?</value>
+		<value>Aprendiz: Que jornada velho?</value>
 	</data>
 	<data name="101" xml:space="preserve">
-		<value>A: Do que o senhor está falando, que jornada?</value>
+		<value>Aprendiz: Do que o senhor está falando, que jornada?</value>
 	</data>
 	<data name="102" xml:space="preserve">
-		<value>M: A jornada que você começará para resgatar o seu amuleto, antes que seja tarde mais.</value>
+		<value>Mestre: A jornada que você começará para resgatar o seu amuleto, antes que seja tarde mais.</value>
 	</data>
 	<data name="11" xml:space="preserve">
 		<value>Você tropeçou no buraco, seu calcanhar lateja, talvez  o torceu? Mas a dor não importa...você precisa continuar correndo</value>
@@ -228,7 +260,7 @@
 		<value>Direita</value>
 	</data>
 	<data name="40" xml:space="preserve">
-		<value>Mestre : Mas que diabos aconteceu com você? </value>
+		<value>Mestre: Mas que diabos aconteceu com você? </value>
 	</data>
 	<data name="41" xml:space="preserve">
 		<value>Ser irônico </value>
@@ -243,19 +275,19 @@
 		<value>Aprendiz: Ei calma mestre, estou bem, não estou?</value>
 	</data>
 	<data name="45" xml:space="preserve">
-		<value>M: Não é hora para brincadeiras, o que aconteceu contigo?... e como assim corvo assassino?</value>
+		<value>Mestre: Não é hora para brincadeiras, o que aconteceu contigo?... e como assim corvo assassino?</value>
 	</data>
 	<data name="46" xml:space="preserve">
-		<value>M: Estou vendo, você está com lama, sangue e cortes por todo o corpo. Você está super bem! </value>
+		<value>Mestre: Estou vendo, você está com lama, sangue e cortes por todo o corpo. Você está super bem! </value>
 	</data>
 	<data name="47" xml:space="preserve">
-		<value>A: É…</value>
+		<value>Aprendiz: É…</value>
 	</data>
 	<data name="48" xml:space="preserve">
-		<value>M: Eu te encontrei quase morto lá fora.</value>
+		<value>Mestre: Eu te encontrei quase morto lá fora.</value>
 	</data>
 	<data name="49 " xml:space="preserve">
-		<value>M: Você entrou aqui quase morto.</value>
+		<value>Mestre: Você entrou aqui quase morto.</value>
 	</data>
 	<data name="5" xml:space="preserve">
 		<value>Esquerda</value>
@@ -264,7 +296,7 @@
 		<value>fraseplaceholder</value>
 	</data>
 	<data name="51" xml:space="preserve">
-		<value>M: Vamos diga. Quem fez isso com você? </value>
+		<value>Mestre: Vamos diga. Quem fez isso com você? </value>
 	</data>
 	<data name="52" xml:space="preserve">
 		<value>Se irritar</value>
@@ -273,22 +305,22 @@
 		<value>Responder </value>
 	</data>
 	<data name="54" xml:space="preserve">
-		<value>A: Você faz muitas perguntas não acha? Me deixa em paz, nem o meu pai você é!</value>
+		<value>Aprendiz: Você faz muitas perguntas não acha? Me deixa em paz, nem o meu pai você é!</value>
 	</data>
 	<data name="55" xml:space="preserve">
-		<value>A: Eu não sei direito mestre, eu só me lembro de alguns flashes e relances. Tudo foi tão rápido.</value>
+		<value>Aprendiz: Eu não sei direito mestre, eu só me lembro de alguns flashes e relances. Tudo foi tão rápido.</value>
 	</data>
 	<data name="56" xml:space="preserve">
-		<value>M: Você não tem direito de falar assim comigo, eu te criei. Você pode não me considerar como seu pai, mas eu tenho direito de saber!</value>
+		<value>Mestre: Você não tem direito de falar assim comigo, eu te criei. Você pode não me considerar como seu pai, mas eu tenho direito de saber!</value>
 	</data>
 	<data name="57" xml:space="preserve">
-		<value>M: Tudo bem jovem, com o tempo você vai se lembrar, fale apenas do que você se recorda.</value>
+		<value>Mestre: Tudo bem jovem, com o tempo você vai se lembrar, fale apenas do que você se recorda.</value>
 	</data>
 	<data name="58" xml:space="preserve">
-		<value>A: OK… Eu me lembro que eu estava fazendo a ronda na área como o senhor me pediu, quando eu ouvi um choro. E a partir daí começa a ficar tudo confuso.</value>
+		<value>Aprendiz: OK… Eu me lembro que eu estava fazendo a ronda na área como o senhor me pediu, quando eu ouvi um choro. E a partir daí começa a ficar tudo confuso.</value>
 	</data>
 	<data name="59" xml:space="preserve">
-		<value>M: Continue… Me diga do que você se lembra.</value>
+		<value>Mestre: Continue… Me diga do que você se lembra.</value>
 	</data>
 	<data name="6" xml:space="preserve">
 		<value>As poças d'água refletem a luz prejudicando a sua visão já quase ineficiente devido a chuva e seus ferimentos no rosto. Dificultando você desviar dos galhos e espinhos pelo caminho que cortam a sua pele com o atrito.</value>
@@ -300,16 +332,16 @@
 		<value>Prosseguir</value>
 	</data>
 	<data name="62" xml:space="preserve">
-		<value>A: Parece que eu não tenho escolha neh?</value>
+		<value>Aprendiz: Parece que eu não tenho escolha neh?</value>
 	</data>
 	<data name="63" xml:space="preserve">
-		<value>A: Humm… beleza</value>
+		<value>Aprendiz: Humm… beleza</value>
 	</data>
 	<data name="64" xml:space="preserve">
-		<value>A: Eu lembro de um corvo, mas não era um corvo qualquer…</value>
+		<value>Aprendiz: Eu lembro de um corvo, mas não era um corvo qualquer…</value>
 	</data>
 	<data name="65" xml:space="preserve">
-		<value>M: Como assim um corvo? Ele era maior que os corvos normais, e tinha um cheiro de podridão?</value>
+		<value>Mestre: Como assim um corvo? Ele era maior que os corvos normais, e tinha um cheiro de podridão?</value>
 	</data>
 	<data name="66" xml:space="preserve">
 		<value>Ser sarcástico </value>
@@ -318,10 +350,10 @@
 		<value>Concordar</value>
 	</data>
 	<data name="68" xml:space="preserve">
-		<value>A: Isso mesmo! e ele também tinha um cifre e defecava arco-íris</value>
+		<value>Aprendiz: Isso mesmo! e ele também tinha um cifre e defecava arco-íris</value>
 	</data>
 	<data name="69" xml:space="preserve">
-		<value>A: Sim! E seus olhos, eram os olhos mais assustadores que eu já vi. Como se em cada entranha do animal morasse a morte</value>
+		<value>Aprendiz: Sim! E seus olhos, eram os olhos mais assustadores que eu já vi. Como se em cada entranha do animal morasse a morte</value>
 	</data>
 	<data name="7" xml:space="preserve">
 		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz.</value>
@@ -421,35 +453,5 @@
 	</data>
 	<data name="99" xml:space="preserve">
 		<value>Jornada?</value>
-	</data>
-	<data name="01" xml:space="preserve">
-		<value>Você sente o seu sangue esvair das suas veias e banhar a sua pele…</value>
-	</data>
-	<data name="02" xml:space="preserve">
-		<value>Os machucados que fizera no percurso somados aos que outrora já residiam em seu corpo sugaram toda a sua energia, assim como a sua consciência.</value>
-	</data>
-	<data name="03" xml:space="preserve">
-		<value>Seus olhos fecham sem permissão...seu corpo deita na terra inerte…</value>
-	</data>
-	<data name="04" xml:space="preserve">
-		<value>Você não conseguiu chegar a tempo...desapontou a si mesmo e tudo o que você pode contar agora é com a sorte.</value>
-	</data>
-	<data name="05" xml:space="preserve">
-		<value>Você acorda deitado sobre o tapete de pele da já conhecida sala escura e fria da sua casa.</value>
-	</data>
-	<data name="06" xml:space="preserve">
-		<value>“Mas como você eu cheguei até aqui?!” você se pergunta.</value>
-	</data>
-	<data name="07" xml:space="preserve">
-		<value>A dor já não é mesma...pois seus ferimentos estão adormecidos com umas plantas medicinais e enfaixados com panos.</value>
-	</data>
-	<data name="08" xml:space="preserve">
-		<value>Mestre… </value>
-	</data>
-	<data name="09" xml:space="preserve">
-		<value>Um homem de cabelo grisalho com uma cicatriz no rosto Seu físico de certa idade, mas com cicatrizes e olhos que guardam incontáveis histórias</value>
-	</data>
-	<data name="010" xml:space="preserve">
-		<value>E o mesmo aparece no cômodo com uma pequena vela acesa em mãos e com uma cara de poucos amigos.</value>
 	</data>
 </root>
