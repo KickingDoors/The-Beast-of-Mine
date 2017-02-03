@@ -117,12 +117,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="01" xml:space="preserve">
-		<value>Você sente o seu sangue esvair das suas veias e banhar a sua pele…
-</value>
+		<value>Você sente o seu sangue esvair das suas veias e banhar a sua pele…</value>
 	</data>
 	<data name="010" xml:space="preserve">
-		<value>E o mesmo aparece no cômodo com uma pequena vela acesa em mãos e com uma cara de poucos amigos.
-</value>
+		<value>E o mesmo aparece no cômodo com uma pequena vela acesa em mãos e com uma cara de poucos amigos.</value>
+	</data>
+	<data name="011" xml:space="preserve">
+		<value>Aprendiz: O que é isso?</value>
+	</data>
+	<data name="012" xml:space="preserve">
+		<value>Mestre: Eu iria te dar um outro bestiário que já estava aberto, mas como você anda muito engraçadinho por que não abre esse daqui?</value>
+	</data>
+	<data name="013" xml:space="preserve">
+		<value>Aprendiz: Não deve ser tão difícil assim abrir uma fechadura.</value>
 	</data>
 	<data name="02" xml:space="preserve">
 		<value>Os machucados que fizera no percurso somados aos que outrora já residiam em seu corpo sugaram toda a sua energia, assim como a sua consciência.</value>
@@ -359,25 +366,25 @@
 		<value>Apesar de mais escuro o caminho, você fez a escolha certa. Estranhamente seus olhos se adaptam melhor na escuridão do que na luz.</value>
 	</data>
 	<data name="70" xml:space="preserve">
-		<value>M: Eu estou cansado das suas gracinhas, continue assim e você não vai gostar da consequência. </value>
+		<value>Mestre: Eu estou cansado das suas gracinhas, continue assim e você não vai gostar da consequência. </value>
 	</data>
 	<data name="71" xml:space="preserve">
-		<value>M: Você não viu nada jovem.</value>
+		<value>Mestre: Você não viu nada jovem.</value>
 	</data>
 	<data name="72" xml:space="preserve">
-		<value>M: Vamos, conte-me mais.</value>
+		<value>Mestre: Vamos, conte-me mais.</value>
 	</data>
 	<data name="73" xml:space="preserve">
-		<value>A: O bicho atacou o meu rosto com suas garras. Eu lutei com ele, eu acho.  E então agarrou o meu amuleto e saiu voando com ele entre as garras. O corvo soltou um bramido que mais pareceu uma risada humana do que um um som animal.</value>
+		<value>Aprendiz: O bicho atacou o meu rosto com suas garras. Eu lutei com ele, eu acho.  E então agarrou o meu amuleto e saiu voando com ele entre as garras. O corvo soltou um bramido que mais pareceu uma risada humana do que um um som animal.</value>
 	</data>
 	<data name="74" xml:space="preserve">
-		<value>M: O amuleto que eu fiz para você quando eu te encontrei bebê?</value>
+		<value>Mestre: O amuleto que eu fiz para você quando eu te encontrei bebê?</value>
 	</data>
 	<data name="75" xml:space="preserve">
-		<value>A: Esse mesmo… Eu sempre o usei como o senhor pediu mas eu não vejo motivo para essa cara de preocupação mestre, era só um amuleto. Aliás o senhor nunca me contou direito como me encontrou e que aconteceu com a minha mãe ou meu pai….</value>
+		<value>Aprendiz: Esse mesmo… Eu sempre o usei como o senhor pediu mas eu não vejo motivo para essa cara de preocupação mestre, era só um amuleto. Aliás o senhor nunca me contou direito como me encontrou e que aconteceu com a minha mãe ou meu pai….</value>
 	</data>
 	<data name="76" xml:space="preserve">
-		<value>M: Eu já lhe disse, eu não sei sobre o seu pai e a sua mãe morreu….</value>
+		<value>Mestre: Eu já lhe disse, eu não sei sobre o seu pai e a sua mãe morreu….</value>
 	</data>
 	<data name="77" xml:space="preserve">
 		<value>Como </value>
@@ -386,34 +393,34 @@
 		<value>Quem</value>
 	</data>
 	<data name="79" xml:space="preserve">
-		<value>A: Mas como ela morreu? Foi uma doença? Ou alguém a matou?</value>
+		<value>Aprendiz: Mas como ela morreu? Foi uma doença? Ou alguém a matou?</value>
 	</data>
 	<data name="8" xml:space="preserve">
 		<value>A chuva caí intensamente sobe as folhas largas da árvores, mas não impede encharcar as suas roupas.</value>
 	</data>
 	<data name="80" xml:space="preserve">
-		<value>A: Você conseguiu ver quem a matou? Ou ela já estava morta quando o senhor chegou?</value>
+		<value>Aprendiz: Você conseguiu ver quem a matou? Ou ela já estava morta quando o senhor chegou?</value>
 	</data>
 	<data name="81" xml:space="preserve">
-		<value>M: Essa história fica para outro dia. Temos assuntos mais importantes agora. Eu preciso que você veja uma coisa.</value>
+		<value>Mestre: Essa história fica para outro dia. Temos assuntos mais importantes agora. Eu preciso que você veja uma coisa.</value>
 	</data>
 	<data name="82" xml:space="preserve">
-		<value>O Mestre se aproxima em mãos um grande livro de capa de couro</value>
+		<value>Narrador: O Mestre se aproxima em mãos um grande livro de capa de couro</value>
 	</data>
 	<data name="83" xml:space="preserve">
-		<value>Isto é um bestiário jovem...</value>
+		<value>Mestre: Isto é um bestiário jovem...</value>
 	</data>
 	<data name="84" xml:space="preserve">
-		<value>O que isso tem haver?</value>
+		<value>O que isso tem a ver?</value>
 	</data>
 	<data name="85" xml:space="preserve">
 		<value>Não dizer nada</value>
 	</data>
 	<data name="86" xml:space="preserve">
-		<value>A: O que esse livro velho tem haver, não vai dizer que já chegou a hora da soneca e você vai me ler uma historinha de ninar?</value>
+		<value>Aprendiz: O que esse livro velho tem a ver, não vai dizer que já chegou a hora da soneca e você vai me ler uma historinha de ninar?</value>
 	</data>
 	<data name="87" xml:space="preserve">
-		<value>Segundo o bestiário, o corvo é a feiticeira Agnes Morrigan, foi ela quem roubou o seu amuleto. Ela tem a habilidade de se transformar no agradável corvo que te atacou mais cedo</value>
+		<value>Segundo o bestiário, o corvo é a feiticeira Agnes Morrigan, foi ela quem roubou o seu amuleto. Ela tem a habilidade de se transformar no "agradável" corvo que te atacou mais cedo</value>
 	</data>
 	<data name="88" xml:space="preserve">
 		<value>Ridicularizar</value>
@@ -425,13 +432,13 @@
 		<value>Um buraco!</value>
 	</data>
 	<data name="90" xml:space="preserve">
-		<value>A: Parece que o nível dessa feiticeira aí decaiu bastante pra chegar ao ponto de roubar amuleto dos outros</value>
+		<value>Aprendiz: Parece que o nível dessa feiticeira aí decaiu bastante pra chegar ao ponto de roubar amuleto dos outros</value>
 	</data>
 	<data name="91" xml:space="preserve">
-		<value>A: Mas não faz sentido, o que ela queria com o meu amuleto, é só um pedaço de madeira</value>
+		<value>Aprendiz: Mas não faz sentido, o que ela queria com o meu amuleto, é só um pedaço de madeira</value>
 	</data>
 	<data name="92" xml:space="preserve">
-		<value>M: Ela não é uma feiticeira qualquer, e seu ataque não foi algo aleatório jovem. Ela veio em busca do seu amuleto e ela tem os seus motivos.</value>
+		<value>Mestre: Ela não é uma feiticeira qualquer, e seu ataque não foi algo aleatório jovem. Ela veio em busca do seu amuleto e ela tem os seus motivos.</value>
 	</data>
 	<data name="93" xml:space="preserve">
 		<value>Em busca de um pedaço de madeira?</value>
@@ -440,13 +447,13 @@
 		<value>Mas o que ela quer com o amuleto? </value>
 	</data>
 	<data name="95" xml:space="preserve">
-		<value>A: Só se for pra alimentar a lareira da casa dela, com aquele pedaço de madeira inútil</value>
+		<value>Aprendiz: Só se for pra alimentar a lareira da casa dela, com aquele pedaço de madeira inútil</value>
 	</data>
 	<data name="96" xml:space="preserve">
 		<value>A: Mas o que ela quer? Não é mais fácil ela comprar um loja, tenho certeza que existem muitos amuletos mais bonitos que o meu</value>
 	</data>
 	<data name="97" xml:space="preserve">
-		<value>M: Não era um amuleto qualquer. E você vai descobrir isso no decorrer da sua jornada.</value>
+		<value>Mestre: Não era um amuleto qualquer. E você vai descobrir isso no decorrer da sua jornada.</value>
 	</data>
 	<data name="98" xml:space="preserve">
 		<value>Como assim?</value>
