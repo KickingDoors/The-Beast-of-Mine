@@ -447,10 +447,10 @@
 		<value>Mas o que ela quer com o amuleto? </value>
 	</data>
 	<data name="95" xml:space="preserve">
-		<value>Aprendiz: Só se for pra alimentar a lareira da casa dela, com aquele pedaço de madeira inútil</value>
+		<value>Aprendiz: Só se for pra alimentar a lareira da casa dela, com aquele pedaço de madeira inútil.</value>
 	</data>
 	<data name="96" xml:space="preserve">
-		<value>A: Mas o que ela quer? Não é mais fácil ela comprar um loja, tenho certeza que existem muitos amuletos mais bonitos que o meu</value>
+		<value>Aprendiz: Mas o que ela quer? Não é mais fácil ela comprar um loja, tenho certeza que existem muitos amuletos mais bonitos que o meu</value>
 	</data>
 	<data name="97" xml:space="preserve">
 		<value>Mestre: Não era um amuleto qualquer. E você vai descobrir isso no decorrer da sua jornada.</value>
@@ -460,5 +460,17 @@
 	</data>
 	<data name="99" xml:space="preserve">
 		<value>Jornada?</value>
+	</data>
+	<data name="103" xml:space="preserve">
+		<value>Resgatar o amuleto? </value>
+	</data>
+	<data name="104" xml:space="preserve">
+		<value>Tarde demais? </value>
+	</data>
+	<data name="105" xml:space="preserve">
+		<value>Você quer eu vá atrás daquele corvo assassino para resgatar um pedaço de madeira?</value>
+	</data>
+	<data name="106" xml:space="preserve">
+		<value>Tarde demais para que? O que tem de tão importante naquele amuleto?</value>
 	</data>
 </root>
