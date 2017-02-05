@@ -170,14 +170,104 @@
 	<data name="102" xml:space="preserve">
 		<value>Mestre: A jornada que você começará para resgatar o seu amuleto, antes que seja tarde mais.</value>
 	</data>
+	<data name="103" xml:space="preserve">
+		<value>Resgatar o amuleto? </value>
+	</data>
+	<data name="104" xml:space="preserve">
+		<value>Tarde demais? </value>
+	</data>
+	<data name="105" xml:space="preserve">
+		<value>Você quer eu vá atrás daquele corvo assassino para resgatar um pedaço de madeira?</value>
+	</data>
+	<data name="106" xml:space="preserve">
+		<value>Tarde demais para que? O que tem de tão importante naquele amuleto?</value>
+	</data>
+	<data name="107" xml:space="preserve">
+		<value>Mestre: Não, eu quero que você vá atrás da Agnes Morrigan e recupere o seu amuleto, antes que seja tarde mais.</value>
+	</data>
+	<data name="108" xml:space="preserve">
+		<value>Mestre: Jovem, todas as suas perguntas serão respondidas eventualmente.  Agora você precisa partir imediatamente. Pegue as suas coisas, e esse bestiário, ele lhe será útil na sua jornada. </value>
+	</data>
+	<data name="109" xml:space="preserve">
+		<value>Mestre: Não se esqueça de consultá-lo sempre que precisar. Qualquer erro, mesmo que pequeno, pode trazer consequências catastróficas.</value>
+	</data>
 	<data name="11" xml:space="preserve">
 		<value>Você tropeçou no buraco, seu calcanhar lateja, talvez  o torceu? Mas a dor não importa...você precisa continuar correndo</value>
+	</data>
+	<data name="110" xml:space="preserve">
+		<value>Recusar</value>
+	</data>
+	<data name="111" xml:space="preserve">
+		<value>Aceitar </value>
+	</data>
+	<data name="112" xml:space="preserve">
+		<value>Aprendiz: Eu não vou colocar a minha vida em risco</value>
+	</data>
+	<data name="113" xml:space="preserve">
+		<value>Aprendiz: Eu irei mestre.</value>
+	</data>
+	<data name="114" xml:space="preserve">
+		<value>Mestre: Você tem que entender que se você não for sua vida estará em um risco maior e não só como a sua, mas você colocará todas as vidas em risco.</value>
+	</data>
+	<data name="115" xml:space="preserve">
+		<value>Mestre: Bom… eu admiro a sua coragem jovem, mesmo sabendo dos perigos lá fora.</value>
+	</data>
+	<data name="116" xml:space="preserve">
+		<value>Aprendiz: Mas como eu saberei que caminho seguir para achar o amuleto? </value>
+	</data>
+	<data name="117" xml:space="preserve">
+		<value>Mestre: Não se preocupe, o amuleto te mostrará o caminho, ache-o.</value>
+	</data>
+	<data name="118" xml:space="preserve">
+		<value>Não compreender</value>
+	</data>
+	<data name="119" xml:space="preserve">
+		<value>Compreender</value>
 	</data>
 	<data name="12" xml:space="preserve">
 		<value>Você não precisa enxergar para saber onde está indo. Conhece aquele lugar, seu lar.  Tudo o que você é e aprendeu, veio desse lugar…</value>
 	</data>
+	<data name="120" xml:space="preserve">
+		<value>Aprendiz: Mas eu não entendo mestre, há perigos por esse mundo e o senhor disse alguns dias atrás que eu ainda não estava pronto. Por que ir atrás de um pingente sem utilidade nenhuma? </value>
+	</data>
+	<data name="121" xml:space="preserve">
+		<value>Aprendiz: Eu ainda não consigo compreender a importância do amuleto, mas eu confio em você mestre e em suas palavras</value>
+	</data>
+	<data name="122" xml:space="preserve">
+		<value>Mestre: A sua jornada te fará compreender. E lembre-se: Mantenha no seu peito a luz que espanta a escuridão do seu coração. A cada passo e segundo longe da vida, mais doce é o gosto do sangue e mais sedenta é a fome da morte. </value>
+	</data>
+	<data name="123" xml:space="preserve">
+		<value>Aprendiz: O que isso quer dizer?</value>
+	</data>
+	<data name="124" xml:space="preserve">
+		<value>Mestre: Eu espero que você encontre o amuleto antes que você compreenda.</value>
+	</data>
+	<data name="125" xml:space="preserve">
+		<value>Mestre: Agora pegue as suas coisas e esse bestiário. Esse bestiário não um bestiário qualquer, ele revela os seus segredos só para os mais corajosos. </value>
+	</data>
+	<data name="126" xml:space="preserve">
+		<value>Mestre: Isso não quer dizer que você deve agir sem pensar e lutar com as feras com os seus próprios punhos…</value>
+	</data>
+	<data name="127" xml:space="preserve">
+		<value>Mestre: Coragem é saber admitir quando a mente e o conhecimento são mais fortes que qualquer par de músculos. </value>
+	</data>
+	<data name="128" xml:space="preserve">
+		<value>Mestre: Mas às vezes uma porrada resolve as coisas...</value>
+	</data>
+	<data name="129" xml:space="preserve">
+		<value>Mestre: Apesar do medo ser bom às vezes, você apresentou uma certa escassez de ousadia e valentia assim ele possui alguns informações faltando, mas não se preocupe, você pode usar a sua intuição quando alguma informação lhe carecer, ou você pode tentar ser mais corajoso. Esse livro é vivo aprendiz, e a coragem lhe alimenta. </value>
+	</data>
 	<data name="13" xml:space="preserve">
 		<value>Há um tronco caído no meio do caminho</value>
+	</data>
+	<data name="130" xml:space="preserve">
+		<value>Mestre: E como você se mostrou ousado e aceitou a missão mesmo sabendo de seus perigos e não compreendendo-os totalmente, há algumas informações extra no bestiário que podem te ajudar com os obstáculos futuros. Mas cuidado, um pouco de medo e precaução podem ser bom às vezes.</value>
+	</data>
+	<data name="131" xml:space="preserve">
+		<value>Mestre: O livro é inconstante jovem, as dicas e informações vem e vão assim como a bravura e maestria de seu portador. O famoso ditado um livro pode salvar vidas nunca foi tão verdadeiro.</value>
+	</data>
+	<data name="132" xml:space="preserve">
+		<value>Mestre: Adeus e boa sorte…uma jornada te aguarda.</value>
 	</data>
 	<data name="14" xml:space="preserve">
 		<value>Passar por cima</value>
@@ -460,17 +550,5 @@
 	</data>
 	<data name="99" xml:space="preserve">
 		<value>Jornada?</value>
-	</data>
-	<data name="103" xml:space="preserve">
-		<value>Resgatar o amuleto? </value>
-	</data>
-	<data name="104" xml:space="preserve">
-		<value>Tarde demais? </value>
-	</data>
-	<data name="105" xml:space="preserve">
-		<value>Você quer eu vá atrás daquele corvo assassino para resgatar um pedaço de madeira?</value>
-	</data>
-	<data name="106" xml:space="preserve">
-		<value>Tarde demais para que? O que tem de tão importante naquele amuleto?</value>
 	</data>
 </root>
