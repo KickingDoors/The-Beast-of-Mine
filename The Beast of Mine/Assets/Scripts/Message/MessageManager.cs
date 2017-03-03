@@ -14,8 +14,8 @@ public class MessageManager : MonoBehaviour {
     
 	[SerializeField]
 	private Animator TextAnim;
-
-	public char[] CurrentMessage;
+    public float letterDelay = 0.1f;
+    public char[] CurrentMessage;
 	public string DisplayingMsg;
 
     private FadeOut fadeOutScript;
@@ -47,24 +47,18 @@ public class MessageManager : MonoBehaviour {
 		DisplayingMsg = "";
 		StopAllCoroutines ();
 		CurrentMessage = Msg;
-		StartCoroutine ("WriteMsg");
+        StartCoroutine(WriteMsg());
 	}
 
 	IEnumerator WriteMsg (){
-
-
-		TextAnim.SetBool ("visible", true);
-
-		for (int i = 0; i < CurrentMessage.Length; i++) {
-
-			//yield return null;
-
-			DisplayingMsg += CurrentMessage [i];
-			MainText.text = DisplayingMsg;
-		}
-
-		yield return null;
-	}
+        TextAnim.SetBool("visible", true);
+        foreach (Char letter in CurrentMessage)
+        {
+            DisplayingMsg += letter;
+            MainText.text = DisplayingMsg;
+            yield return new WaitForSeconds(letterDelay);
+        }
+    }
 
 	// Update is called once per frame
 	void Update () {
