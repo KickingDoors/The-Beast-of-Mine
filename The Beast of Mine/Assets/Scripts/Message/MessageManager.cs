@@ -11,8 +11,13 @@ public class MessageManager : MonoBehaviour {
 	public Text MainText;
 	public Image BackGround;
 	public string SavedCheckPoint;
-    
-	[SerializeField]
+    private const string ONE_QUARTER_ALPHA = "40";
+    private const string HALF_ALPHA = "7F";
+    private const string THREE_QUARTER_ALPHA = "BF";
+    private const string FULL_ALPHA = "FF";
+    private const string WHITE = "ffffff";
+
+    [SerializeField]
 	private Animator TextAnim;
     public float letterDelay = 0.1f;
     public char[] CurrentMessage;
@@ -54,14 +59,30 @@ public class MessageManager : MonoBehaviour {
         TextAnim.SetBool("visible", true);
         foreach (Char letter in CurrentMessage)
         {
-            DisplayingMsg += letter;
+            updateTextTransparency();
+            DisplayingMsg += "<color=#"+WHITE+ONE_QUARTER_ALPHA+">" + letter+"</color>"; // set transparency to 25%
+            MainText.text = DisplayingMsg;
+            yield return new WaitForSeconds(letterDelay);
+        }
+        for(int i = 0; i < 3; i++) // treat the last letter
+        {
+            updateTextTransparency();
             MainText.text = DisplayingMsg;
             yield return new WaitForSeconds(letterDelay);
         }
     }
 
-	// Update is called once per frame
-	void Update () {
+    private void updateTextTransparency()
+    {
+        DisplayingMsg = DisplayingMsg
+            .Replace(WHITE + THREE_QUARTER_ALPHA, WHITE + FULL_ALPHA) // 75% to 100%
+            .Replace(WHITE + HALF_ALPHA, WHITE + THREE_QUARTER_ALPHA) // 50% to 75%
+            .Replace(WHITE + ONE_QUARTER_ALPHA, WHITE + HALF_ALPHA) // 25% to 50%
+        ;
+    }
+
+    // Update is called once per frame
+    void Update () {
 		if ((CanPassMsg == true && Input.GetKeyDown(KeyCode.Space)) // fala and space
             || Anim.GetBool("Resposta1") // botoes and answer 1
             || Anim.GetBool("Resposta2")) { // botoes and answer2
